@@ -63,15 +63,68 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 6, ../../src/assets/style/main.scss */
-.content-navigation {
-  border-color: #3bbfce;
-  color: #2ca2af;
+/* line 16, ../../src/assets/style/main.scss */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 12, ../../src/assets/style/main.scss */
-.border {
-  padding: 8px;
-  margin: 8px;
-  border-color: #3bbfce;
+/* line 20, ../../src/assets/style/main.scss */
+.brown {
+  background-color: #b38235;
+}
+
+/* line 23, ../../src/assets/style/main.scss */
+.red {
+  background-color: #a61407;
+}
+
+/* line 26, ../../src/assets/style/main.scss */
+.aqua {
+  background-color: #dc3f1c;
+}
+
+/* line 29, ../../src/assets/style/main.scss */
+.lime {
+  background-color: #5b0400;
+}
+
+/* line 32, ../../src/assets/style/main.scss */
+.indigo {
+  background-color: #00515c;
+}
+
+/* line 36, ../../src/assets/style/main.scss */
+.small {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0 2px;
+  text-transform: uppercase;
+}
+
+/* line 43, ../../src/assets/style/main.scss */
+.panel-wrapper {
+  color: white;
+  width: 320px;
+  height: 100%;
+  position: absolute;
+}
+
+/* line 48, ../../src/assets/style/main.scss */
+.panel {
+  font-size: 15px;
+  padding: 45px 0 0 40px;
+  width: 280px;
+}
+
+/* line 53, ../../src/assets/style/main.scss */
+.panel h1 {
+  font-size: 55px;
+  line-height: 56px;
+}
+
+/* line 57, ../../src/assets/style/main.scss */
+.panel .excerpt {
+  opacity: 0.5;
+  margin-top: 40px;
+  line-height: 23px;
 }

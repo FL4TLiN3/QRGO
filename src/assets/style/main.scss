@@ -1,16 +1,61 @@
 @import 'compass/reset';
 
-$blue: #3bbfce;
+$brown: #B38235;
+$brown-hl: #9a4342;
+$red: #A61407;
+$red-hl: #db716f;
+$aqua: #DC3F1C;
+$aqua-hl: #4fc2c4;
+$lime: #5B0400;
+$lime-hl: #6fdba7;
+$indigo: #00515C;
+$indigo-hl: #6fa3db;
+
 $margin: 16px;
 
-.content-navigation {
-    border-color: $blue;
-    color:
-    darken($blue, 9%);
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 
-.border {
-    padding: $margin / 2;
-    margin: $margin / 2;
-    border-color: $blue;
+.brown {
+    background-color: $brown;
+}
+.red {
+    background-color: $red;
+}
+.aqua {
+    background-color: $aqua;
+}
+.lime {
+    background-color: $lime;
+}
+.indigo {
+    background-color: $indigo;
+}
+
+.small {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0 2px;
+    text-transform: uppercase;
+}
+
+.panel-wrapper {
+    color: white;
+    width: 320px; height: 100%;
+    position: absolute;
+}
+.panel {
+    font-size: 15px;
+    padding: 45px 0 0 40px;
+    width: 280px;
+}
+.panel h1 {
+    font-size: 55px;
+    line-height: 56px;
+}
+.panel .excerpt {
+    opacity: 0.5;
+    margin-top: 40px;
+    line-height: 23px;
 }
