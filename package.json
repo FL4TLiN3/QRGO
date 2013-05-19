@@ -1,0 +1,20 @@
+{
+    "name": "blog",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+    },
+    "devDependencies": {
+        "mocha": "*",
+        "chai": "*",
+        "grunt": "*",
+        "grunt-contrib-watch": "*",
+        "grunt-contrib-connect": "*",
+        "grunt-contrib-jade": "*",
+        "grunt-contrib-compass": "*"
+    },
+    "engines": {
+        "node": ">=0.8.9",
+        "npm": ">=1.1.61"
+    }
+}
