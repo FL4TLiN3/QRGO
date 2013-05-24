@@ -63,68 +63,79 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 16, ../../src/assets/style/main.scss */
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+/* line 17, ../../src/assets/style/main.scss */
+html, body {
+  height: 100%;
 }
 
 /* line 20, ../../src/assets/style/main.scss */
-.brown {
-  background-color: #b38235;
-}
-
-/* line 23, ../../src/assets/style/main.scss */
-.red {
-  background-color: #a61407;
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #f3f4e4;
+  font-size: 1vw;
 }
 
 /* line 26, ../../src/assets/style/main.scss */
-.aqua {
-  background-color: #dc3f1c;
-}
-
-/* line 29, ../../src/assets/style/main.scss */
-.lime {
-  background-color: #5b0400;
-}
-
-/* line 32, ../../src/assets/style/main.scss */
-.indigo {
-  background-color: #00515c;
-}
-
-/* line 36, ../../src/assets/style/main.scss */
 .small {
-  font-size: 12px;
+  font-size: 0.6vw;
   font-weight: 600;
   padding: 0 2px;
   text-transform: uppercase;
 }
 
+/* line 34, ../../src/assets/style/main.scss */
+.panels li {
+  float: left;
+}
+
+/* line 37, ../../src/assets/style/main.scss */
+.panels li:nth-child(5n-4) {
+  background-color: #b38235;
+}
+
+/* line 40, ../../src/assets/style/main.scss */
+.panels li:nth-child(5n-3) {
+  background-color: #a61407;
+}
+
 /* line 43, ../../src/assets/style/main.scss */
-.panel-wrapper {
-  color: white;
-  width: 320px;
-  height: 100%;
-  position: absolute;
+.panels li:nth-child(5n-2) {
+  background-color: #dc3f1c;
 }
 
-/* line 48, ../../src/assets/style/main.scss */
-.panel {
+/* line 46, ../../src/assets/style/main.scss */
+.panels li:nth-child(5n-1) {
+  background-color: #5b0400;
+}
+
+/* line 49, ../../src/assets/style/main.scss */
+.panels li:nth-child(5n) {
+  background-color: #00515c;
+}
+
+/* line 58, ../../src/assets/style/main.scss */
+.panels li {
+  width: 16.6666666%;
+  height: 33em;
+}
+
+/* line 62, ../../src/assets/style/main.scss */
+.panel-content {
+  margin: 2vw 0 0 2vw;
+  color: #f3f4e4;
   font-size: 15px;
-  padding: 45px 0 0 40px;
-  width: 280px;
 }
 
-/* line 53, ../../src/assets/style/main.scss */
-.panel h1 {
+/* line 67, ../../src/assets/style/main.scss */
+.panel-content h2 {
   font-size: 55px;
-  line-height: 56px;
+  font-size: 3vw;
 }
 
-/* line 57, ../../src/assets/style/main.scss */
-.panel .excerpt {
-  opacity: 0.5;
-  margin-top: 40px;
+/* line 71, ../../src/assets/style/main.scss */
+.panel-content .excerpt {
+  opacity: 0.6;
+  margin: 1vw 1vw 0 0;
   line-height: 23px;
+  font-size: 1vw;
 }

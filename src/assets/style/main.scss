@@ -1,5 +1,6 @@
 @import 'compass/reset';
 
+$white: #F3F4E4;
 $brown: #B38235;
 $brown-hl: #9a4342;
 $red: #A61407;
@@ -13,49 +14,63 @@ $indigo-hl: #6fa3db;
 
 $margin: 16px;
 
+html, body {
+    height: 100%;
+}
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
-}
-
-.brown {
-    background-color: $brown;
-}
-.red {
-    background-color: $red;
-}
-.aqua {
-    background-color: $aqua;
-}
-.lime {
-    background-color: $lime;
-}
-.indigo {
-    background-color: $indigo;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: $white;
+    font-size: 1vw;
 }
 
 .small {
-    font-size: 12px;
+    font-size: 0.6vw;
     font-weight: 600;
     padding: 0 2px;
     text-transform: uppercase;
 }
 
-.panel-wrapper {
-    color: white;
-    width: 320px; height: 100%;
-    position: absolute;
+
+.panels li {
+    float: left;
 }
-.panel {
+.panels li:nth-child(5n-4) {
+    background-color: $brown;
+}
+.panels li:nth-child(5n-3) {
+    background-color: $red;
+}
+.panels li:nth-child(5n-2) {
+    background-color: $aqua;
+}
+.panels li:nth-child(5n-1) {
+    background-color: $lime;
+}
+.panels li:nth-child(5n) {
+    background-color: $indigo;
+}
+@media screen and (min-width: 1240px) and (max-width: 1679px) {
+}
+@media screen and (min-width: 1680px) and (max-width: 1919px) {
+}
+@media screen and (min-width: 1920px) {
+}
+.panels li {
+    width: 16.6666666%;
+    height: 33em;
+}
+.panel-content {
+    margin: 2vw 0 0 2vw;
+    color: $white;
     font-size: 15px;
-    padding: 45px 0 0 40px;
-    width: 280px;
 }
-.panel h1 {
+.panel-content h2 {
     font-size: 55px;
-    line-height: 56px;
+    font-size: 3vw;
 }
-.panel .excerpt {
-    opacity: 0.5;
-    margin-top: 40px;
+.panel-content  .excerpt {
+    opacity: 0.6;
+    margin: 1vw 1vw 0 0;
     line-height: 23px;
+    font-size: 1vw;
 }
