@@ -2,97 +2,17 @@
 html
   head
     title The Yard
+    link(href='/css/vendor/bootstrap.min.css',media='all',rel='stylesheet',type='text/css')
+    link(href='/css/vendor/bootstrap-responsive.min.css',media='all',rel='stylesheet',type='text/css')
     link(href='/css/main.css',media='all',rel='stylesheet',type='text/css')
+    script(data-main='/js/main',src='/js/vendor/require.min.js')
   body
-    ul#panels.panels
-      li
-        .panel-content
-          .small 14 May 2013
-          h1 Dynamic Bezel Lines
-          .excerpt
-            p Dynamically created bezel lines experiment. Works with text or images with transparency
-      li
-        .panel-content
-          .small 14 May 2013
-          h1 Dynamic Bezel Lines
-          .excerpt
-            p Dynamically created bezel lines experiment. Works with text or images with transparency
-      li
-        .panel-content
-          .small 14 May 2013
-          h1 Dynamic Bezel Lines
-          .excerpt
-            p Dynamically created bezel lines experiment. Works with text or images with transparency
-      li
-        .panel-content
-          .small 14 May 2013
-          h1 Dynamic Bezel Lines
-          .excerpt
-            p Dynamically created bezel lines experiment. Works with text or images with transparency
-      li
-        .panel-content
-          .small 14 May 2013
-          h1 Dynamic Bezel Lines
-          .excerpt
-            p Dynamically created bezel lines experiment. Works with text or images with transparency
-      li
-        .panel-content
-          .small 14 May 2013
-          h1 Dynamic Bezel Lines
-          .excerpt
-            p Dynamically created bezel lines experiment. Works with text or images with transparency
-      li
-        .panel-content
-          .small 14 May 2013
-          h1 Dynamic Bezel Lines
-          .excerpt
-            p Dynamically created bezel lines experiment. Works with text or images with transparency
-      li
-        .panel-content
-          .small 14 May 2013
-          h1 Dynamic Bezel Lines
-          .excerpt
-            p Dynamically created bezel lines experiment. Works with text or images with transparency
-      li
-        .panel-content
-          .small 14 May 2013
-          h1 Dynamic Bezel Lines
-          .excerpt
-            p Dynamically created bezel lines experiment. Works with text or images with transparency
-      li
-        .panel-content
-          .small 14 May 2013
-          h1 Dynamic Bezel Lines
-          .excerpt
-            p Dynamically created bezel lines experiment. Works with text or images with transparency
-      li
-        .panel-content
-          .small 14 May 2013
-          h1 Dynamic Bezel Lines
-          .excerpt
-            p Dynamically created bezel lines experiment. Works with text or images with transparency
-      li
-        .panel-content
-          .small 14 May 2013
-          h1 Dynamic Bezel Lines
-          .excerpt
-            p Dynamically created bezel lines experiment. Works with text or images with transparency
-      li
-        .panel-content
-          .small 14 May 2013
-          h1 Dynamic Bezel Lines
-          .excerpt
-            p Dynamically created bezel lines experiment. Works with text or images with transparency
-      li
-        .panel-content
-          .small 14 May 2013
-          h1 Dynamic Bezel Lines
-          .excerpt
-      li
-        .panel-content
-          .small 14 May 2013
-          h1 Dynamic Bezel Lines
-          .excerpt
-            p Dynamically created bezel lines experiment. Works with text or images with transparency
-    script(src='/js/main.js')
+    .container-fluid
+      .navbar
+        .navbar-inner
+          form.navbar-form
+            a.brand(href="/") QR&GO
+            input#url(type="text")
+            button#convert.btn CONVERT
+      ol#panels.panels
     script(src='http://localhost:35729/livereload.js')

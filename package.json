@@ -7,6 +7,7 @@
     "devDependencies": {
         "mocha": "*",
         "chai": "*",
+        "requirejs": "*",
         "grunt": "*",
         "grunt-contrib-watch": "*",
         "grunt-contrib-connect": "*",

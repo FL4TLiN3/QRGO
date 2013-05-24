@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Sintony:700);
 /* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -63,19 +64,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 17, ../../src/assets/style/main.scss */
+/* line 22, ../../src/assets/style/main.scss */
 html, body {
   height: 100%;
 }
 
-/* line 20, ../../src/assets/style/main.scss */
+/* line 25, ../../src/assets/style/main.scss */
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: #f3f4e4;
   font-size: 1vw;
 }
 
-/* line 26, ../../src/assets/style/main.scss */
+/* line 31, ../../src/assets/style/main.scss */
 .small {
   font-size: 0.6vw;
   font-weight: 600;
@@ -83,59 +84,137 @@ body {
   text-transform: uppercase;
 }
 
-/* line 34, ../../src/assets/style/main.scss */
+/* line 38, ../../src/assets/style/main.scss */
+.container-fluid {
+  padding: 0;
+}
+
+/* line 41, ../../src/assets/style/main.scss */
+.navbar {
+  margin: 0;
+  background-color: #097487;
+}
+
+/* line 45, ../../src/assets/style/main.scss */
+.navbar-inner {
+  background: #097487;
+  border: none;
+  padding: 1vw 0 1vw 1vw;
+}
+
+/* line 50, ../../src/assets/style/main.scss */
+.navbar .brand {
+  padding: 0;
+  margin: 0 1vw 0 0;
+  font-family: 'Sintony', sans-serif;
+  font-size: 2.5vw;
+  line-height: 4vw;
+  text-decoration: none;
+  color: #f3f4e4;
+}
+
+/* line 59, ../../src/assets/style/main.scss */
+.navbar .brand:first-letter {
+  font-size: 3vw;
+}
+
+/* line 62, ../../src/assets/style/main.scss */
+.navbar .brand:hover {
+  color: #f9f9f9;
+}
+
+/* line 65, ../../src/assets/style/main.scss */
+.navbar-form #url {
+  width: 30vw;
+  height: auto;
+  padding: 1vw;
+  margin: 0 0.5vw 0 0;
+  border: none;
+  border-radius: 0;
+  font-size: 1.5vw;
+  line-height: 1.9vw;
+  font-family: 'Sintony', sans-serif;
+  background-color: #f3f4e4;
+}
+
+/* line 77, ../../src/assets/style/main.scss */
+.navbar-form #convert {
+  height: auto;
+  padding: 1vw;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  font-size: 2.0vw;
+  line-height: 2.0vw;
+  font-family: 'Sintony', sans-serif;
+  color: #f3f4e4;
+  background: #dc3f1c;
+}
+
+/* line 90, ../../src/assets/style/main.scss */
 .panels li {
   float: left;
 }
 
-/* line 37, ../../src/assets/style/main.scss */
+/* line 93, ../../src/assets/style/main.scss */
 .panels li:nth-child(5n-4) {
   background-color: #b38235;
 }
 
-/* line 40, ../../src/assets/style/main.scss */
+/* line 96, ../../src/assets/style/main.scss */
 .panels li:nth-child(5n-3) {
   background-color: #a61407;
 }
 
-/* line 43, ../../src/assets/style/main.scss */
+/* line 99, ../../src/assets/style/main.scss */
 .panels li:nth-child(5n-2) {
   background-color: #dc3f1c;
 }
 
-/* line 46, ../../src/assets/style/main.scss */
+/* line 102, ../../src/assets/style/main.scss */
 .panels li:nth-child(5n-1) {
   background-color: #5b0400;
 }
 
-/* line 49, ../../src/assets/style/main.scss */
+/* line 105, ../../src/assets/style/main.scss */
 .panels li:nth-child(5n) {
   background-color: #00515c;
 }
 
-/* line 58, ../../src/assets/style/main.scss */
+/* line 114, ../../src/assets/style/main.scss */
 .panels li {
   width: 16.6666666%;
   height: 33em;
 }
 
-/* line 62, ../../src/assets/style/main.scss */
+/* line 118, ../../src/assets/style/main.scss */
 .panel-content {
   margin: 2vw 0 0 2vw;
   color: #f3f4e4;
   font-size: 15px;
 }
 
-/* line 67, ../../src/assets/style/main.scss */
+/* line 123, ../../src/assets/style/main.scss */
 .panel-content h2 {
   font-size: 55px;
   font-size: 3vw;
 }
 
-/* line 71, ../../src/assets/style/main.scss */
+/* line 127, ../../src/assets/style/main.scss */
 .panel-content .excerpt {
   opacity: 0.6;
   margin: 1vw 1vw 0 0;
-  line-height: 23px;
   font-size: 1vw;
+  line-height: 1.2vw;
+}
+
+/* line 133, ../../src/assets/style/main.scss */
+.panel-content .qrcode {
+  margin: 1.3vw 0 0 0;
+}
+
+/* line 136, ../../src/assets/style/main.scss */
+.panel-content .qrcode canvas {
+  width: 12.7vw;
+  height: 12.7vw;
 }

@@ -12,7 +12,12 @@ $lime-hl: #6fdba7;
 $indigo: #00515C;
 $indigo-hl: #6fa3db;
 
+$withoutAPaddle: #097487;
+$shokz: #E8D392;
+
 $margin: 16px;
+
+@import url(http://fonts.googleapis.com/css?family=Sintony:700);
 
 html, body {
     height: 100%;
@@ -30,6 +35,57 @@ body {
     text-transform: uppercase;
 }
 
+.container-fluid {
+    padding: 0;
+}
+.navbar {
+    margin: 0;
+    background-color: $withoutAPaddle;
+}
+.navbar-inner {
+    background: $withoutAPaddle;
+    border: none;
+    padding: 1vw 0 1vw 1vw;
+}
+.navbar .brand {
+    padding: 0;
+    margin: 0 1vw 0 0;
+    font-family: 'Sintony', sans-serif;
+    font-size: 2.5vw;
+    line-height: 4vw;
+    text-decoration: none;
+    color: $white;
+}
+.navbar .brand:first-letter {
+    font-size: 3vw;
+}
+.navbar .brand:hover {
+    color: #f9f9f9;
+}
+.navbar-form #url {
+    width: 30vw;
+    height: auto;
+    padding: 1vw;
+    margin: 0 0.5vw 0 0;
+    border: none;
+    border-radius: 0;
+    font-size: 1.5vw;
+    line-height: 1.9vw;
+    font-family: 'Sintony', sans-serif;
+    background-color: $white;
+}
+.navbar-form #convert {
+    height: auto;
+    padding: 1vw;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    font-size: 2.0vw;
+    line-height: 2.0vw;
+    font-family: 'Sintony', sans-serif;
+    color: $white;
+    background: $aqua;
+}
 
 .panels li {
     float: left;
@@ -68,9 +124,16 @@ body {
     font-size: 55px;
     font-size: 3vw;
 }
-.panel-content  .excerpt {
+.panel-content .excerpt {
     opacity: 0.6;
     margin: 1vw 1vw 0 0;
-    line-height: 23px;
     font-size: 1vw;
+    line-height: 1.2vw;
+}
+.panel-content .qrcode {
+    margin: 1.3vw 0 0 0;
+}
+.panel-content .qrcode canvas {
+    $qrSize: 12.7vw;
+    width: $qrSize; height: $qrSize;
 }
