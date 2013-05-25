@@ -211,47 +211,41 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-transition: all 0.35s ease;
 }
 /* line 10, ../../src/assets/style/_hero.scss */
-.hero h1, .hero p, .hero .tour {
+.hero h1, .hero p {
   color: #2b2129;
   text-align: center;
 }
 /* line 14, ../../src/assets/style/_hero.scss */
 .hero h1 {
   font-size: 9vw;
+  margin-top: 2vw;
 }
-/* line 17, ../../src/assets/style/_hero.scss */
+/* line 18, ../../src/assets/style/_hero.scss */
 .hero h1:first-letter {
   font-size: 10vw;
 }
-/* line 20, ../../src/assets/style/_hero.scss */
+/* line 21, ../../src/assets/style/_hero.scss */
 .hero p {
   margin-top: 0.3vw;
 }
-/* line 23, ../../src/assets/style/_hero.scss */
-.hero .tour-btn {
-  padding: 0.4vw 0.5vw;
-  margin: 2.5vw 0 2vw;
-  font-size: 3.5vw;
-  line-height: 3.5vw;
-}
 
-/* line 31, ../../src/assets/style/_hero.scss */
+/* line 25, ../../src/assets/style/_hero.scss */
 .hero-close {
   height: 0;
   opacity: 0;
 }
 
-/* line 35, ../../src/assets/style/_hero.scss */
+/* line 29, ../../src/assets/style/_hero.scss */
 .hero-open {
-  height: 20vw;
+  height: 17vw;
   opacity: 1;
 }
 
-/* line 40, ../../src/assets/style/_hero.scss */
+/* line 34, ../../src/assets/style/_hero.scss */
 .hero-collapse {
   text-align: center;
 }
-/* line 43, ../../src/assets/style/_hero.scss */
+/* line 37, ../../src/assets/style/_hero.scss */
 .hero-collapse .hero-collapse-btn {
   width: 100%;
   background: transparent;
@@ -259,12 +253,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 0;
 }
 
-/* line 50, ../../src/assets/style/_hero.scss */
+/* line 44, ../../src/assets/style/_hero.scss */
 .hero-collapse-open {
   background: #acbcbd;
 }
 
-/* line 53, ../../src/assets/style/_hero.scss */
+/* line 47, ../../src/assets/style/_hero.scss */
 .hero-collapse-close {
   background: #acbcbd;
 }
