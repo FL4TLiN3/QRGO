@@ -1,5 +1,17 @@
 
-define(['const', 'localStorage'], function(Const, Storage) {
+define(
+    [
+        'const',
+        'event',
+        'localStorage',
+        'viewController/panel'
+    ],
+    function(
+        Const,
+        Event,
+        Storage,
+        PanelVC
+    ) {
     var exports = {};
 
     exports.init = function() {
@@ -34,10 +46,10 @@ define(['const', 'localStorage'], function(Const, Storage) {
             target = list.children[0],
             li = document.createElement('li');
         li.id = entry.id;
-        li.innerHTML = createEntryAsHTML(entry, true);
+        li.innerHTML = PanelVC.createEntryAsHTML(entry, true);
         li.className = 'container-fluid fadein';
         list.insertBefore(li, target);
-        bindEvents(li);
+        Event.bindEvents(li);
     };
 
     return exports;
