@@ -12,8 +12,8 @@ html
         .navbar-inner
           form#form.navbar-form.pull-left(action="#")
             a.brand(href="#") QR&GO
-            input#url(type="text",placeholder="http://fl4tlin3.github.io/qrgo")
-            button#convert.convert-btn GO
+            input#url(type="text",placeholder="http://fl4tlin3.github.io/qrgo",data-intro="First, type URL convert to QR Code.", data-step="1")
+            button#convert.convert-btn(data-intro="Then, GO!", data-step="2") GO
           ul.links.pull-right
             li.blog
               a(href="http://fl4tlin3.github.io") FL4TLiN3.github.io
@@ -23,7 +23,7 @@ html
         h1 QR&GO
         p Safe, Fast, and Easy to Use QR Code Generator, Organizer.
         .tour
-          button.tour-btn START TOUR
+          button#tour.tour-btn START TOUR
       #hero-collapse.hero-collapse.hero-collapse-close
         button.hero-collapse-btn
          span.icon-chevron-down.icon-white

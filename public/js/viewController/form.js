@@ -14,6 +14,8 @@ define(
     ) {
     var exports = {};
 
+    Storage.heroStateOpen();
+
     exports.init = function() {
         document.getElementById('convert').onclick =
         document.getElementById('form').onsubmit = function() {

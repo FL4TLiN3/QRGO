@@ -2,6 +2,7 @@
 define(['const', 'localStorage'], function(Const, Storage) {
     var exports = {};
 
+console.log(arguments);
     exports.init = function() {
         return exports.createEntriesAsHTML(Storage.findAll());
     };
