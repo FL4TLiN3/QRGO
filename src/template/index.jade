@@ -2,17 +2,17 @@
 html
   head
     title The Yard
-    link(href='/css/vendor/bootstrap.min.css',media='all',rel='stylesheet',type='text/css')
-    link(href='/css/vendor/bootstrap-responsive.min.css',media='all',rel='stylesheet',type='text/css')
-    link(href='/css/main.css',media='all',rel='stylesheet',type='text/css')
-    script(data-main='/js/main',src='/js/vendor/require.min.js')
+    link(href='css/vendor/bootstrap.min.css',media='all',rel='stylesheet',type='text/css')
+    link(href='css/vendor/bootstrap-responsive.min.css',media='all',rel='stylesheet',type='text/css')
+    link(href='css/main.css',media='all',rel='stylesheet',type='text/css')
+    script(data-main='js/main',src='js/vendor/require.min.js')
   body
     .container-fluid
-      .navbar
+      .navbar.navbar-fixed-top
         .navbar-inner
-          form.navbar-form
+          form#form.navbar-form(action="#")
             a.brand(href="/") QR&GO
-            input#url(type="text")
+            input#url(type="text",placeholder="http://fl4tlin3.github.io/qrgo")
             button#convert.btn CONVERT
       ol#panels.panels
     script(src='http://localhost:35729/livereload.js')
