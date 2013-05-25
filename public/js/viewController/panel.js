@@ -2,6 +2,10 @@
 define(['const', 'localStorage'], function(Const, Storage) {
     var exports = {};
 
+    exports.init = function() {
+        return exports.createEntriesAsHTML(Storage.findAll());
+    };
+
     exports.createEntryAsHTML = function(entry, naked) {
         var nodeBody = '<div class="panel-content">' +
                        '<div class="qrcode pull-left" data-url="' + entry.url + '"></div>' +
@@ -25,10 +29,6 @@ define(['const', 'localStorage'], function(Const, Storage) {
             buffer += exports.createEntryAsHTML(entry);
         });
         return buffer;
-    };
-
-    exports.init = function() {
-        return exports.createEntriesAsHTML(Storage.findAll());
     };
 
     return exports;
