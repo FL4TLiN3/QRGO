@@ -1,18 +1,33 @@
 !!! 5
 html
   head
-    title QR&GO | Safe and Easy QR Code Generator, Clipboard
-    link(href='css/vendor/bootstrap.min.css',media='all',rel='stylesheet',type='text/css')
-    link(href='css/vendor/bootstrap-responsive.min.css',media='all',rel='stylesheet',type='text/css')
+    title QR&GO | Safe and Easy QR Code Generator, Organizer
+    link(href='css/bootstrap.min.css',media='all',rel='stylesheet',type='text/css')
+    link(href='css/bootstrap-responsive.min.css',media='all',rel='stylesheet',type='text/css')
     link(href='css/main.css',media='all',rel='stylesheet',type='text/css')
     script(data-main='js/main',src='js/vendor/require.min.js')
   body
-    .container-fluid
+    .wrapper.container-fluid
       .navbar.navbar-fixed-top
         .navbar-inner
-          form#form.navbar-form(action="#")
-            a.brand(href="/") QR&GO
+          form#form.navbar-form.pull-left(action="#")
+            a.brand(href="#") QR&GO
             input#url(type="text",placeholder="http://fl4tlin3.github.io/qrgo")
-            button#convert.btn CONVERT
+            button#convert.convert-btn GO
+          ul.links.pull-right
+            li.blog
+              a(href="http://fl4tlin3.github.io") FL4TLiN3.github.io
+            li.github
+              a(href="https://github.com/FL4TLiN3/qrgo") GitHub
+      #hero.hero.hero-close
+        h1 QR&GO
+        p Safe, Fast, and Easy to Use QR Code Generator, Organizer.
+        .tour
+          button.tour-btn START TOUR
+      #hero-collapse.hero-collapse.hero-collapse-close
+        button.hero-collapse-btn
+         span.icon-chevron-down.icon-white
       ol#panels.panels
+    footer.footer
+      p Copyright FL4T-LiN3 2013
     script(src='http://localhost:35729/livereload.js')

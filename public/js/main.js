@@ -1,22 +1,24 @@
+
 (function(global, document) {
     var Const,
         Resize,
         Event,
-        PanelVC,
-        FormVC,
-        ZoomVC,
-        ClearVC,
-        QRCodeVC,
-        MemoVC;
-
+        Form,
+        Hero,
+        Panel,
+        Zoom,
+        Clear,
+        QRCode,
+        Memo;
 
     require(
         [
             'const',
             'resize',
             'event',
-            'viewController/panel',
             'viewController/form',
+            'viewController/hero',
+            'viewController/panel',
             'viewController/zoom',
             'viewController/clear',
             'viewController/qrcode',
@@ -27,16 +29,18 @@
             Const    = arguments[i++];
             Resize   = arguments[i++];
             Event    = arguments[i++];
-            PanelVC  = arguments[i++];
-            FormVC   = arguments[i++];
-            ZoomVC   = arguments[i++];
-            ClearVC  = arguments[i++];
-            QRCodeVC = arguments[i++];
-            MemoVC   = arguments[i++];
+            Form     = arguments[i++];
+            Hero     = arguments[i++];
+            Panel    = arguments[i++];
+            Zoom     = arguments[i++];
+            Clear    = arguments[i++];
+            QRCode   = arguments[i++];
+            Memo     = arguments[i++];
 
             Resize.init();
-            document.getElementById('panels').innerHTML = PanelVC.init();
-            FormVC.init();
+            document.getElementById('panels').innerHTML = Panel.init();
+            Form.init();
+            Hero.init();
             Event.bindEvents(document.getElementById(Const.ID_PANELS));
         }
     );

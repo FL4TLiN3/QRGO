@@ -46,5 +46,14 @@ define(["const"], function(Const) {
         this.saveAll(newEntries);
     };
 
+    exports.heroStateOpen = function() {
+        if (!localStorage[Const.ID_HERO]) localStorage[Const.ID_HERO] = Const,STATE_HERO_OPEN;
+        return Const.STATE_HERO_OPEN === localStorage[Const.ID_HERO];
+    };
+
+    exports.changeHeroState = function(state) {
+        localStorage[Const.ID_HERO] = state;
+    };
+
     return exports;
 });

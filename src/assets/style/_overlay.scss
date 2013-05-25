@@ -1,0 +1,47 @@
+@import 'global';
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    z-index: 9999;
+
+    .close-btn {
+        $size: 3vw;
+        font-size: $size;
+        line-height: $size;
+        position: absolute;
+        top: $size;
+        right: $size;
+        margin: -$size/2;
+    }
+
+    .largeQRCode {
+        $size: 256px;
+        position: absolute;
+        width: $size;
+        height: $size;
+        top: 40%;
+        left: 50%;
+        margin: -$size/2;
+    }
+
+    .largeURL {
+        $width: 50%;
+        $height: 10vw;
+        $fontsize: 2vw;
+        position: absolute;
+        width: 50%;
+        height: $height;
+        bottom: 10%;
+        left: 50%;
+        margin-left: -25%;
+        text-align: center;
+        word-break: break-all;
+        overflow: hidden;
+        font-size: $fontsize;
+        line-height: $fontsize;
+    }
+}

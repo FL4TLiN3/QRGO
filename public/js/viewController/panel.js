@@ -14,8 +14,8 @@ define(['const', 'localStorage'], function(Const, Storage) {
                        '<a href="' + entry.url + '"><h2>' + entry.url+ '</h2></a>' +
                        '</div>' +
                        '<div class="buttons pull-right">' +
-                       '<button class="btn zoomBtn" data-url="' + entry.url + '">ZOOM</button>' +
-                       '<button class="btn clearBtn" data-id="' + entry.id + '">CLEAR</button>' +
+                       '<button class="zoom-btn" data-url="' + entry.url + '">ZOOM</button>' +
+                       '<button class="clear-btn" data-id="' + entry.id + '">CLEAR</button>' +
                        '</div>' +
                        '<div class="memo pull-left" data-id="' + entry.id + '"><div>' + entry.memo + '</div></div>' +
                        '</div>';

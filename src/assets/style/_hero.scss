@@ -1,0 +1,55 @@
+@import 'global';
+
+.hero {
+    width: 100%;
+    background: $paleblue;
+    overflow: hidden;
+    transition: all 0.35s ease;
+    -webkit-transition: all 0.35s ease;
+
+    h1, p, .tour {
+        color: $black;
+        text-align: center;
+    }
+    h1 {
+        font-size: 9vw;
+    }
+    h1:first-letter {
+        font-size: 10vw;
+    }
+    p {
+        margin-top: 0.3vw;
+    }
+    .tour-btn {
+        $size: 3.5vw;
+        padding: 0.4vw 0.5vw;
+        margin: 2.5vw 0 2vw;
+        font-size: $size;
+        line-height: $size;
+    }
+}
+.hero-close {
+    height: 0;
+    opacity: 0;
+}
+.hero-open {
+    height: 20vw;
+    opacity: 1;
+}
+
+.hero-collapse {
+    text-align: center;
+
+    .hero-collapse-btn {
+        width: 100%;
+        background: transparent;
+        border: none;
+        border-radius: 0;
+    }
+}
+.hero-collapse-open {
+    background: $paleblue;
+}
+.hero-collapse-close {
+    background: $paleblue;
+}

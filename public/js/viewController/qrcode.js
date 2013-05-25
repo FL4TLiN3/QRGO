@@ -6,12 +6,12 @@ define(
     ],
     function(
         Const,
-        QRCode
+        QRCodeGenerator
     ) {
     var exports = {};
 
     exports.create = function(target) {
-        qrcode = new QRCode(target, {
+        qrcode = new QRCodeGenerator(target, {
             text: target.getAttribute('data-url'),
             colorDark : "#444",
             colorLight : "#F3F4E4"
@@ -31,7 +31,7 @@ define(
             overlay.id = Const.ID_OVERLAY;
             overlay.className = 'overlay fadein';
             overlay.style.height = window.innerHeight + 'px';
-            overlay.innerHTML = '<div class="closeButtonWrapper"><button id="' + Const.ID_CLOSE_OVERLAY + '" class="btn closeBtn">CLOSE</button></div>' +
+            overlay.innerHTML = '<div class="closeButtonWrapper"><button id="' + Const.ID_CLOSE_OVERLAY + '" class="close-btn">CLOSE</button></div>' +
                                 '<div id="' + Const.ID_LARGE_QRCODE + '" class="largeQRCode" data-url="' + target.getAttribute('data-url') + '"></div>' +
                                 '<div id="' + Const.ID_LARGE_URL + '" class="largeURL">' + target.getAttribute('data-url') + '</div>';
             document.body.appendChild(overlay);

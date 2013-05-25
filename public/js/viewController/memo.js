@@ -7,6 +7,7 @@ define(['const', 'localStorage'], function(Const, Storage) {
             this.bind(targets[i]);
         }
     };
+
     exports.bind = function(target) {
         var from, to,
             id = target.getAttribute('data-id');

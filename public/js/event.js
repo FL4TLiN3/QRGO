@@ -9,18 +9,18 @@ define(
     ],
     function(
         Const,
-        ZoomVC,
-        ClearVC,
-        QRCodeVC,
-        MemoVC
+        Zoom,
+        Clear,
+        QRCode,
+        Memo
     ) {
         var exports = {};
 
         exports.bindEvents = function(target) {
-            QRCodeVC.createAll(target.querySelectorAll('.qrcode'));
-            ClearVC.bindAll(target.querySelectorAll('.clearBtn'));
-            ZoomVC.bindAll(target.querySelectorAll('.zoomBtn'));
-            MemoVC.bindAll(target.querySelectorAll('.memo'));
+            QRCode.createAll(target.querySelectorAll('.qrcode'));
+            Clear.bindAll(target.querySelectorAll('.clear-btn'));
+            Zoom.bindAll(target.querySelectorAll('.zoom-btn'));
+            Memo.bindAll(target.querySelectorAll('.memo'));
         };
 
         return exports;

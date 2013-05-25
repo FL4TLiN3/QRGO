@@ -1,10 +1,10 @@
 
-define(['viewController/qrcode'], function(QRCodeVC) {
+define(['viewController/qrcode'], function(QRCode) {
     var exports = {};
 
     exports.bindAll = function(targets) {
         for (var i = 0, size = targets.length; i < size; i++) {
-            QRCodeVC.bind(targets[i]);
+            QRCode.bind(targets[i]);
         }
     };
 

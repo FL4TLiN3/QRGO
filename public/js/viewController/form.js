@@ -10,7 +10,7 @@ define(
         Const,
         Event,
         Storage,
-        PanelVC
+        Panel
     ) {
     var exports = {};
 
@@ -46,7 +46,7 @@ define(
             target = list.children[0],
             li = document.createElement('li');
         li.id = entry.id;
-        li.innerHTML = PanelVC.createEntryAsHTML(entry, true);
+        li.innerHTML = Panel.createEntryAsHTML(entry, true);
         li.className = 'container-fluid fadein';
         list.insertBefore(li, target);
         Event.bindEvents(li);
