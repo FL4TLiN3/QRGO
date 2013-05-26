@@ -10,6 +10,15 @@ module.exports = function(grunt) {
                 }
             }
         },
+        requirejs: {
+            compile: {
+                options: {
+                    baseUrl: 'src/js',
+                    name: 'main',
+                    out: 'public/js/main.min.js'
+                }
+            }
+        },
         jade: {
             compile: {
                 options: {
@@ -35,6 +44,13 @@ module.exports = function(grunt) {
             }
         },
         watch: {
+            requirejs: {
+                files: ['src/js/**/*.js'],
+                tasks: ['requirejs'],
+                options: {
+                    livereload: true
+                }
+            },
             jade: {
                 files: ['src/template/**/*.jade'],
                 tasks: ['jade'],
