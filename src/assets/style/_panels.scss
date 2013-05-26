@@ -51,6 +51,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         -webkit-text-overflow: ellipsis;
+        -moz-text-overflow: ellipsis;
         -o-text-overflow: ellipsis;
     }
     .excerpt {
@@ -80,10 +81,7 @@
         div {
             width: 76vw;
             height: 3vw;
-            overflow: scroll;
-        }
-        div.empty {
-            opacity: 0.4;
+            overflow: hidden;
         }
         textarea {
             $size: 1vw;
@@ -96,7 +94,7 @@
         }
     }
     .buttons {
-        width: 10.7vw;
+        width: 12vw;
         margin: 0 1vw 0 0;
 
         .zoom-btn {

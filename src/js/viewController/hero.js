@@ -12,15 +12,15 @@ define(['const', 'localStorage'], function(Const, Storage) {
     };
 
     exports.toggleHero = function() {
-        if (hero.offsetHeight == 0) {
+        if (hero.offsetHeight === 0) {
             hero.className = 'hero hero-open';
             heroCollapse.className = 'hero-collapse hero-collapse-open';
-            collapseButton.innerHTML = '<span class="icon-chevron-up icon-white"></span>';
+            collapseButton.innerHTML = '<span class="icon-up"></span>';
             Storage.changeHeroState(Const.STATE_HERO_OPEN);
         } else {
             hero.className = 'hero hero-close';
             heroCollapse.className = 'hero-collapse hero-collapse-close';
-            collapseButton.innerHTML = '<span class="icon-chevron-down icon-white"></span>';
+            collapseButton.innerHTML = '<span class="icon-down"></span>';
             Storage.changeHeroState(Const.STATE_HERO_CLOSE);
         }
     };

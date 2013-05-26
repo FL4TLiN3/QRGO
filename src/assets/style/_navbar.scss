@@ -1,6 +1,9 @@
 @import 'global';
 
 .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
     margin: 0;
     background-color: $indigo;
 
@@ -12,11 +15,14 @@
         .navbar-form {
             width: 60vw;
 
+            .brand, #url, .convert-btn {
+                display: block;
+                float: left;
+            }
+
             .brand {
-                padding: 0;
                 margin: 0 1.5vw 0 1vw;
                 font-size: 2.5vw;
-                line-height: 4vw;
                 text-decoration: none;
                 color: $white;
             }
@@ -28,24 +34,23 @@
             }
             #url {
                 width: 28vw;
-                height: auto;
-                padding: 1vw;
-                margin: 0 0.5vw 0 0;
+                padding: 0.7vw 1vw;
+                margin: 0.3vw 0.5vw 0 0;
                 border: none;
                 border-radius: 0;
-                font-size: 1.5vw;
-                line-height: 1.9vw;
+                font-size: 1.0vw;
                 background-color: $white;
             }
             .convert-btn {
-                height: auto;
-                padding: 0.3vw 0.5vw;
-                font-size: 3.2vw;
-                line-height: 3.3vw;
+                padding: 0.1vw 0.5vw;
+                margin: 0.3vw 0 0 0;
+                font-size: 1.8vw;
             }
         }
         .links {
-            margin: 1.3vw 0 0 0;
+            float: right;
+            margin: 1vw 0 0 0;
+
             a, a:hover, a:active, a:visited {
                 color: $white;
                 font-size: 1vw;

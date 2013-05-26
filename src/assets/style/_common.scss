@@ -1,5 +1,18 @@
 @import 'global';
 
+.clearfix {zoom:1;}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+
 .small {
     font-weight: 600;
     padding: 0.4vw 0;
@@ -7,15 +20,16 @@
 }
 
 .fadein {
-    animation:         'fadein' 0.5s ease;
-    -webkit-animation: 'fadein' 0.5s ease;
-    -moz-animation:    'fadein' 0.5s ease;
-    -o-animation:      'fadein' 0.5s ease;
+    animation: fadein 0.5s ease;
+    -webkit-animation: fadein 0.5s ease;
+    -moz-animation: fadein 0.5s ease;
+    -o-animation: fadein 0.5s ease;
 }
-@keyframes         'fadein' { from { opacity: 0; } to { opacity: 1; } }
-@-webkit-keyframes 'fadein' { from { opacity: 0; } to { opacity: 1; } }
-@-moz-keyframes    'fadein' { from { opacity: 0; } to { opacity: 1; } }
-@-o-keyframes      'fadein' { from { opacity: 0; } to { opacity: 1; } }
+
+@keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+@-webkit-keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+@-moz-keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+@-o-keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
 
 .collapseOut {
     height: 0 !important;
