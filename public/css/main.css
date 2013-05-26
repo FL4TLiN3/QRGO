@@ -188,15 +188,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-decoration: none;
   color: #f3f4e4;
 }
-/* line 29, ../../src/assets/style/_navbar.scss */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  /* line 23, ../../src/assets/style/_navbar.scss */
+  .navbar .navbar-inner .navbar-form .brand {
+    font-size: 10rem;
+  }
+}
+/* line 33, ../../src/assets/style/_navbar.scss */
 .navbar .navbar-inner .navbar-form .brand:first-letter {
   font-size: 3vw;
 }
-/* line 32, ../../src/assets/style/_navbar.scss */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  /* line 33, ../../src/assets/style/_navbar.scss */
+  .navbar .navbar-inner .navbar-form .brand:first-letter {
+    font-size: 11rem;
+  }
+}
+/* line 39, ../../src/assets/style/_navbar.scss */
 .navbar .navbar-inner .navbar-form .brand:hover {
   color: #f9f9f9;
 }
-/* line 35, ../../src/assets/style/_navbar.scss */
+/* line 42, ../../src/assets/style/_navbar.scss */
 .navbar .navbar-inner .navbar-form #url {
   width: 28vw;
   padding: 0.7vw 1vw;
@@ -206,23 +218,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-size: 1.0vw;
   background-color: #f3f4e4;
 }
-/* line 44, ../../src/assets/style/_navbar.scss */
+/* line 51, ../../src/assets/style/_navbar.scss */
 .navbar .navbar-inner .navbar-form .convert-btn {
   padding: 0.1vw 0.5vw;
   margin: 0.3vw 0 0 0;
   font-size: 1.8vw;
 }
-/* line 50, ../../src/assets/style/_navbar.scss */
+/* line 57, ../../src/assets/style/_navbar.scss */
 .navbar .navbar-inner .links {
   float: right;
   margin: 1vw 0 0 0;
 }
-/* line 54, ../../src/assets/style/_navbar.scss */
+/* line 61, ../../src/assets/style/_navbar.scss */
 .navbar .navbar-inner .links a, .navbar .navbar-inner .links a:hover, .navbar .navbar-inner .links a:active, .navbar .navbar-inner .links a:visited {
   color: #f3f4e4;
   font-size: 1vw;
 }
-/* line 58, ../../src/assets/style/_navbar.scss */
+/* line 65, ../../src/assets/style/_navbar.scss */
 .navbar .navbar-inner .links li {
   display: inline;
   margin: 0 1vw;
@@ -477,27 +489,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 11, ../../src/assets/style/main.scss */
+html {
+  font-size: 1vw;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  /* line 11, ../../src/assets/style/main.scss */
+  html {
+    font-size: 62.5%;
+  }
+}
+
+/* line 18, ../../src/assets/style/main.scss */
 body {
   margin-top: 5vw;
   font-family: 'Sintony', sans-serif;
   background-color: #f3f4e4;
-  font-size: 1vw;
 }
 
-/* line 17, ../../src/assets/style/main.scss */
+/* line 23, ../../src/assets/style/main.scss */
 button {
   font-family: 'Sintony', sans-serif;
   background: #dc3f1c;
   color: #f3f4e4;
   border: none;
   border-radius: 0;
-  transition: background-color 0.35s ease;
-  -webkit-transition: background-color 0.35s ease;
-  -moz-transition: background-color 0.35s ease;
-  -o-transition: background-color 0.35s ease;
+  transition: opacity 0.5s ease, background-color 0.35s ease;
+  -webkit-transition: opacity 0.5s ease, background-color 0.35s ease;
+  -moz-transition: opacity 0.5s ease, background-color 0.35s ease;
+  -o-transition: opacity 0.5s ease, background-color 0.35s ease;
 }
 
-/* line 32, ../../src/assets/style/main.scss */
+/* line 38, ../../src/assets/style/main.scss */
 .convert-btn:hover,
 .zoom-btn:hover,
 .clear-btn:hover,
@@ -506,17 +528,17 @@ button {
   background: #ec4f2c;
 }
 
-/* line 35, ../../src/assets/style/main.scss */
+/* line 41, ../../src/assets/style/main.scss */
 .wrapper {
   min-height: 80vh;
 }
 
-/* line 38, ../../src/assets/style/main.scss */
+/* line 44, ../../src/assets/style/main.scss */
 .container-fluid {
   padding: 0;
 }
 
-/* line 41, ../../src/assets/style/main.scss */
+/* line 47, ../../src/assets/style/main.scss */
 .footer {
   font-size: 1vw;
   line-height: 1vw;
