@@ -16,6 +16,13 @@
         top: $size;
         right: $size;
         margin: -$size/2;
+
+        @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+            font-size: 8rem;
+            line-height: 8rem;
+            top: 5rem;
+            right: 5rem;
+        }
     }
 
     .largeQRCode {
@@ -43,5 +50,10 @@
         overflow: hidden;
         font-size: $fontsize;
         line-height: $fontsize;
+
+        @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+            font-size: 4rem;
+            line-height: 5rem;
+        }
     }
 }

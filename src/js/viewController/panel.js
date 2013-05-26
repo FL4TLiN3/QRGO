@@ -20,7 +20,7 @@ define(['const', 'localStorage'], function(Const, Storage) {
                        '<div class="memo pull-left" data-id="' + entry.id + '"><div>' + entry.memo + '</div></div>' +
                        '</div>';
         if (naked) return nodeBody;
-        else return '<li id="' + entry.id + '" class="container-fluid fadein">' + nodeBody + '</li>';
+        else return '<li id="' + entry.id + '" class="clearfix fadein">' + nodeBody + '</li>';
     };
 
     exports.createEntriesAsHTML = function(entries) {

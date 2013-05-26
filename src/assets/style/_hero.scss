@@ -7,31 +7,68 @@
     transition: all 0.35s ease;
     -webkit-transition: all 0.35s ease;
 
+    @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        margin: 0;
+        background: $indigo;
+        transition: none;
+        -webkit-transition: none;
+    }
+
     h1, p {
         color: $black;
         text-align: center;
+        @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+            color: $white;
+        }
     }
     h1 {
         font-size: 7vw;
         margin-top: 0.8vw;
+        @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+            font-size: 10rem;
+            margin-top: 2rem;
+        }
     }
     h1:first-letter {
         font-size: 8vw;
+
+        @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+            font-size: 11rem;
+        }
     }
     p {
         font-size: 0.8vw;
         margin-top: 0.3vw;
+
+        @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+            display: none;
+        }
     }
 }
 .hero-close {
     height: 0;
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+        height: 15rem;
+    }
 }
 .hero-open {
     height: 12vw;
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+        height: 15rem;
+    }
 }
 
 .hero-collapse {
     text-align: center;
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+        display: none;
+    }
 
     .hero-collapse-btn {
         width: 100%;

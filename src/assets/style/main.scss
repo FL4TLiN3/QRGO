@@ -19,6 +19,10 @@ body {
     margin-top: 5vw;
     font-family: 'Sintony', sans-serif;
     background-color: $white;
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+        margin: 14rem 0 12rem;
+    }
 }
 button {
     font-family: 'Sintony', sans-serif;

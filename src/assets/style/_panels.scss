@@ -3,6 +3,10 @@
 .panels {
     li {
         height: 10vw;
+
+        @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+            height: 20.5rem;
+        }
     }
     li:hover .zoom-btn,
     li:hover .clear-btn {
@@ -42,46 +46,82 @@
     padding: 1vw 0 1vw;
     font-size: 15px;
 
-    h2 {
-        font-size: 55px;
-        font-size: 2vw;
-        line-height: 2.4vw;
-        white-space: nowrap;
-        word-break: break-all;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        -webkit-text-overflow: ellipsis;
-        -moz-text-overflow: ellipsis;
-        -o-text-overflow: ellipsis;
+    @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+        margin: 0;
+        padding: 0 0 0.5rem 0;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        height: 20rem;
     }
-    .excerpt {
-        opacity: 0.6;
-        margin: 1vw 1vw 0 0;
-        font-size: 1vw;
-        line-height: 1.2vw;
-    }
+
     .qrcode {
         margin: 0 0 0 2vw;
+
+        @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+            margin: 0;
+        }
 
         img, canvas {
             $qrSize: 8vw;
             width: $qrSize; height: $qrSize;
+
+            @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+                $qrSize: 20rem;
+                width: $qrSize; height: $qrSize;
+            }
         }
     }
+
     .meta {
         width: 76vw;
         height: 5vw;
         margin: 0 0 0 1vw;
+
+        @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+            width: 52rem;
+            height: 10rem;
+        }
+
+        h2 {
+            font-size: 55px;
+            font-size: 2vw;
+            line-height: 2.4vw;
+            white-space: nowrap;
+            word-break: break-all;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-text-overflow: ellipsis;
+            -moz-text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+
+            @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+                font-size: 4rem;
+                line-height: 5rem;
+            }
+        }
     }
+
     .memo {
         width: 76vw;
         height: 3vw;
         margin: 0 0 0 1vw;
 
+        @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+            width: 75rem;
+            height: 10rem;
+        }
+
         div {
             width: 76vw;
             height: 3vw;
             overflow: hidden;
+
+            @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+                width: 75rem;
+                height: 10rem;
+                font-size: 3rem;
+                line-height: 3rem;
+            }
         }
         textarea {
             $size: 1vw;
@@ -91,11 +131,24 @@
             padding: 0.25vw 0.5vw;
             font-size: $size;
             line-height: $size;
+
+            @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+                width: 75rem;
+                height: 9rem;
+                font-size: 3rem;
+                line-height: 3rem;
+            }
         }
     }
     .buttons {
         width: 12vw;
         margin: 0 1vw 0 0;
+
+        @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+            margin: 0;
+            width: 24.2rem;
+            float: right;
+        }
 
         .zoom-btn {
             $size: 1.5vw;
@@ -104,6 +157,10 @@
             margin-right: 0.5vw;
             font-size: $size;
             line-height: $size;
+
+            @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+                display: none;
+            }
         }
         .clear-btn {
             $size: 1.5vw;
@@ -111,6 +168,13 @@
             padding: 0.2vw;
             font-size: $size;
             line-height: $size;
+
+            @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+                opacity: 1;
+                margin: 0;
+                font-size: 8rem;
+                line-height: 9rem;
+            }
         }
     }
 }

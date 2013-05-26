@@ -12,12 +12,24 @@
         border: none;
         padding: 1vw 0 1vw 1vw;
 
+        @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+            padding: 0;
+        }
+
         .navbar-form {
             width: 60vw;
+
+            @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+                width: 100%;
+            }
 
             .brand, #url, .convert-btn {
                 display: block;
                 float: left;
+
+                @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+                    float: none;
+                }
             }
 
             .brand {
@@ -25,6 +37,10 @@
                 font-size: 2.5vw;
                 text-decoration: none;
                 color: $white;
+
+                @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+                    display:none
+                }
             }
             .brand:first-letter {
                 font-size: 3vw;
@@ -40,16 +56,46 @@
                 border-radius: 0;
                 font-size: 1.0vw;
                 background-color: $white;
+
+                @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+                    margin: 0;
+                    padding: 4rem 2.5%;
+                    width: 75%;
+                    background-color: $indigo;
+                    font-size: 5rem;
+                    line-height: 5rem;
+                    float: left;
+                    color: $white;
+                }
             }
+            @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+                #url::-webkit-input-placeholder {
+                    color: $paleblue;
+                }
+            }
+
             .convert-btn {
                 padding: 0.1vw 0.5vw;
                 margin: 0.3vw 0 0 0;
                 font-size: 1.8vw;
+
+                @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+                    margin: 0;
+                    padding: 1rem 0 1rem;
+                    width: 20%;
+                    font-size: 12rem;
+                    line-height: 12rem;
+                    float: left;
+                }
             }
         }
         .links {
             float: right;
             margin: 1vw 0 0 0;
+
+            @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+                display: none;
+            }
 
             a, a:hover, a:active, a:visited {
                 color: $white;
