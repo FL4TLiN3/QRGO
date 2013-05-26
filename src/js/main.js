@@ -1,8 +1,8 @@
 
 (function(global, document) {
-    if (~location.href.indexOf('localhost') || ~location.href.indexOf('192.168')) {
+    if (location.hostname === 'localhost' || ~location.hostname.indexOf('192.168')) {
         var livereload = document.createElement('script');
-        livereload.src = 'http://localhost:35729/livereload.js';
+        livereload.src = 'http://' + location.hostname + ':35729/livereload.js';
         document.body.appendChild(livereload);
     }
     require(
