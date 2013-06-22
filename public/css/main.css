@@ -349,8 +349,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2ad76', end
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   /* line 72, ../../src/assets/style/_navbar.scss */
-  .navbar .navbar-inner .navbar-form #url::-webkit-input-placeholder {
+  .navbar .navbar-inner .navbar-form{
     color: black;
+  }
+  
+  #url::-webkit-input-placeholder{
+  color:#rgb(153, 153, 153);
   }
 }
 /* line 77, ../../src/assets/style/_navbar.scss */
