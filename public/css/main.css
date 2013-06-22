@@ -76,6 +76,90 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   clear: both;
 }
 
+
+/* webfont  ojset*/
+@font-face {
+    font-family: 'NovecentowideBookBold';
+    src: url('Novecentowide-Bold-webfont.eot');
+    src: url('Novecentowide-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Novecentowide-Bold-webfont.woff') format('woff'),
+         url('Novecentowide-Bold-webfont.ttf') format('truetype'),
+         url('Novecentowide-Bold-webfont.svg#NovecentowideBookBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NovecentowideBookRegular';
+    src: url('Novecentowide-Book-webfont.eot');
+    src: url('Novecentowide-Book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Novecentowide-Book-webfont.woff') format('woff'),
+         url('Novecentowide-Book-webfont.ttf') format('truetype'),
+         url('Novecentowide-Book-webfont.svg#NovecentowideBookRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NovecentowideLightBold';
+    src: url('Novecentowide-DemiBold-webfont.eot');
+    src: url('Novecentowide-DemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Novecentowide-DemiBold-webfont.woff') format('woff'),
+         url('Novecentowide-DemiBold-webfont.ttf') format('truetype'),
+         url('Novecentowide-DemiBold-webfont.svg#NovecentowideLightBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+@font-face {
+    font-family: 'NovecentowideLightRegular';
+    src: url('Novecentowide-Light-webfont.eot');
+    src: url('Novecentowide-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Novecentowide-Light-webfont.woff') format('woff'),
+         url('Novecentowide-Light-webfont.ttf') format('truetype'),
+         url('Novecentowide-Light-webfont.svg#NovecentowideLightRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'NovecentowideUltraLightBold';
+    src: url('Novecentowide-Medium-webfont.eot');
+    src: url('Novecentowide-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Novecentowide-Medium-webfont.woff') format('woff'),
+         url('Novecentowide-Medium-webfont.ttf') format('truetype'),
+         url('Novecentowide-Medium-webfont.svg#NovecentowideUltraLightBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'NovecentowideNormalRegular';
+    src: url('Novecentowide-Normal-webfont.eot');
+    src: url('Novecentowide-Normal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Novecentowide-Normal-webfont.woff') format('woff'),
+         url('Novecentowide-Normal-webfont.ttf') format('truetype'),
+         url('Novecentowide-Normal-webfont.svg#NovecentowideNormalRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
 /* line 9, ../../src/assets/style/_common.scss */
 .pull-left {
   float: left;
@@ -83,14 +167,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 12, ../../src/assets/style/_common.scss */
 .pull-right {
-  float: right;
+  position: absolute;
+  right: 0.5vw;
 }
 
 /* line 16, ../../src/assets/style/_common.scss */
 .small {
-  font-weight: 600;
-  padding: 0.4vw 0;
+  padding: 0.4vw 0 0 0;
   text-transform: uppercase;
+  font-family: NovecentowideUltraLightBold;
+  letter-spacing: 0.1em;
+  color: rgb(0, 0, 0);
+  font-size: 0.9vw;
+  margin-bottom: 0.1vw;
 }
 
 /* line 22, ../../src/assets/style/_common.scss */
@@ -164,13 +253,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 100%;
   top: 0;
   margin: 0;
-  background-color: #00515c;
+  z-index: 9999 !important;
 }
 /* line 10, ../../src/assets/style/_navbar.scss */
 .navbar .navbar-inner {
-  background: #00515c;
   border: none;
   padding: 1vw 0 1vw 1vw;
+  background: -moz-linear-gradient(left,  rgba(226,173,118,1) 0%, rgba(225,174,120,1) 25%, rgba(213,211,188,0.45) 50%, rgba(206,214,191,0.25) 55%, rgba(208,215,197,0.25) 100%); /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(226,173,118,1)), color-stop(25%,rgba(225,174,120,1)), color-stop(50%,rgba(213,211,188,0.45)), color-stop(55%,rgba(206,214,191,0.25)), color-stop(100%,rgba(208,215,197,0.25))); /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(left,  rgba(226,173,118,1) 0%,rgba(225,174,120,1) 25%,rgba(213,211,188,0.45) 50%,rgba(206,214,191,0.25) 55%,rgba(208,215,197,0.25) 100%); /* Chrome10+,Safari5.1+ */
+
+  background: 5-o-linear-gradient(left,  rgba(226,173,118,1) 0%,rgba(225,174,120,1) 25%,rgba(213,211,188,0.45) 50%,rgba(206,214,191,0.25) 75%,rgba(208,215,197,0.25) 100%); /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(left,  rgba(226,173,118,1) 0%,rgba(225,174,120,1) 25%,rgba(213,211,188,0.45) 50%,rgba(206,214,191,0.25) 55%,rgba(208,215,197,0.25) 100%); /* IE10+ */
+
+  background: linear-gradient(to right,  rgba(226,173,118,1) 0%,rgba(225,174,120,1) 25%,rgba(213,211,188,0.45) 50%,rgba(206,214,191,0.25) 55%,rgba(208,215,197,0.25) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2ad76', endColorstr='#40d0d7c5',GradientType=1 ); /* IE6-9 */
+
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   /* line 10, ../../src/assets/style/_navbar.scss */
@@ -200,8 +301,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
 }
 /* line 35, ../../src/assets/style/_navbar.scss */
+
 .navbar .navbar-inner .navbar-form .brand {
-  margin: 0 1.5vw 0 1vw;
+  margin: 0.4vw 1.5vw 0 1vw;
   font-size: 2.5vw;
   text-decoration: none;
   color: #f3f4e4;
@@ -214,7 +316,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 /* line 45, ../../src/assets/style/_navbar.scss */
 .navbar .navbar-inner .navbar-form .brand:first-letter {
-  font-size: 3vw;
+ /* font-size: 3vw;*/
 }
 /* line 48, ../../src/assets/style/_navbar.scss */
 .navbar .navbar-inner .navbar-form .brand:hover {
@@ -228,32 +330,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border: none;
   border-radius: 0;
   font-size: 1.0vw;
-  background-color: #f3f4e4;
+  background-color: rgba(255, 255, 255, 0.81);
 }
+
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   /* line 51, ../../src/assets/style/_navbar.scss */
   .navbar .navbar-inner .navbar-form #url {
     margin: 0;
     padding: 4rem 2.5%;
     width: 75%;
-    background-color: #00515c;
+  /*   background-color: #00515c; */
     font-size: 5rem;
     line-height: 5rem;
     float: left;
-    color: #f3f4e4;
+    color: black;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   /* line 72, ../../src/assets/style/_navbar.scss */
   .navbar .navbar-inner .navbar-form #url::-webkit-input-placeholder {
-    color: #acbcbd;
+    color: black;
   }
 }
 /* line 77, ../../src/assets/style/_navbar.scss */
 .navbar .navbar-inner .navbar-form .convert-btn {
-  padding: 0.1vw 0.5vw;
+  padding: 0.22vw 0.8vw;
   margin: 0.3vw 0 0 0;
   font-size: 1.8vw;
+  font-family: 'NovecentowideUltraLightBold';
+  text-align: center;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   /* line 77, ../../src/assets/style/_navbar.scss */
@@ -277,6 +383,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: none;
   }
 }
+
+#keisatoLink{
+    text-indent: -9999px;
+    display: block;
+    width: 5vw;
+    height: 5vw;
+    background: url("../img/icon_oj.png")no-repeat 0 0;
+    position: absolute;
+    top: 1.1vw;
+    right: 3.6vw;
+    background-size: 3.4vw;
+    -webkit-transition: all 0.2s ease;
+}
+
+#githubLink{
+    text-indent: -9999px;
+    display: block;
+    width: 5vw;
+    height: 5vw;
+    background: url("../img/icon_git.png")no-repeat 0 0;
+    position: absolute;
+    top: 1vw;
+    right: 0vw;
+    background-size: 3.5vw;
+    -webkit-transition: all 0.2s ease;
+}
+
+#keisatoLink:hover,#githubLink:hover{
+    opacity:0.5;
+}
+
+
+}
+
 /* line 100, ../../src/assets/style/_navbar.scss */
 .navbar .navbar-inner .links a, .navbar .navbar-inner .links a:hover, .navbar .navbar-inner .links a:active, .navbar .navbar-inner .links a:visited {
   color: #f3f4e4;
@@ -286,32 +426,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .navbar .navbar-inner .links li {
   display: inline;
   margin: 0 1vw;
+  z-index: 1;
 }
+
+.github a{}
 
 /* line 3, ../../src/assets/style/_hero.scss */
 .hero {
   width: 100%;
-  background: #acbcbd;
   overflow: hidden;
   transition: all 0.35s ease;
   -webkit-transition: all 0.35s ease;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
-  /* line 3, ../../src/assets/style/_hero.scss */
-  .hero {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    margin: 0;
-    background: #00515c;
-    transition: none;
-    -webkit-transition: none;
-  }
+
+.hero a,
+.hero a:hover,
+.hero a:visited,
+.hero a:active {
+    color: rgba(255, 255, 255, 0.87);
 }
+
 /* line 20, ../../src/assets/style/_hero.scss */
 .hero h1, .hero p {
-  color: #2b2129;
+  color: rgba(255, 255, 255, 0.87);
   text-align: center;
+  letter-spacing: 0.1em;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   /* line 20, ../../src/assets/style/_hero.scss */
@@ -321,9 +460,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 /* line 27, ../../src/assets/style/_hero.scss */
 .hero h1 {
-  font-size: 7vw;
-  margin-top: 0.8vw;
+  font-size: 6vw;
+  margin-top: 2.1vw;
+  font-family: NovecentowideNormalRegular;
 }
+
+
+.hero h1:first-letter{}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   /* line 27, ../../src/assets/style/_hero.scss */
   .hero h1 {
@@ -332,19 +476,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
 }
 /* line 35, ../../src/assets/style/_hero.scss */
-.hero h1:first-letter {
-  font-size: 8vw;
-}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   /* line 35, ../../src/assets/style/_hero.scss */
   .hero h1:first-letter {
-    font-size: 11rem;
   }
 }
 /* line 42, ../../src/assets/style/_hero.scss */
 .hero p {
-  font-size: 0.8vw;
+  font-size: 1.2vw;
   margin-top: 0.3vw;
+  font-family: NovecentowideNormalRegular;
+  letter-spacing: 0.2em;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   /* line 42, ../../src/assets/style/_hero.scss */
@@ -378,6 +521,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 66, ../../src/assets/style/_hero.scss */
 .hero-collapse {
   text-align: center;
+  margin-bottom: 2vw;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   /* line 66, ../../src/assets/style/_hero.scss */
@@ -395,12 +539,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 80, ../../src/assets/style/_hero.scss */
 .hero-collapse-open {
-  background: #acbcbd;
+    margin-bottom: 2vw;
 }
 
 /* line 83, ../../src/assets/style/_hero.scss */
 .hero-collapse-close {
-  background: #acbcbd;
 }
 
 /* line 88, ../../src/assets/style/_hero.scss */
@@ -425,7 +568,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 4, ../../src/assets/style/_panels.scss */
 .panels li {
-  height: 10vw;
+  margin-bottom: 1px;
+  height: 10.6vw;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   /* line 4, ../../src/assets/style/_panels.scss */
@@ -433,6 +577,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     height: 20.5rem;
   }
 }
+
 /* line 12, ../../src/assets/style/_panels.scss */
 .panels li:hover .zoom-btn,
 .panels li:hover .clear-btn {
@@ -440,10 +585,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transition-duration: 0.5s;
   transition-timing-function: ease;
 }
+
+@media screen and (max-width: 320px){
+ .clear-btn{right:-7px;}
+}
+
 /* line 17, ../../src/assets/style/_panels.scss */
 .panels li:nth-child(2n-1) .panel-content {
-  background-color: #f3f4e4;
-  color: #5b0400;
+  background-color: rgba(255, 255, 255, 0.37);
+  color: rgb(184, 141, 141);
 }
 /* line 21, ../../src/assets/style/_panels.scss */
 .panels li:nth-child(2n-1) .panel-content:hover {
@@ -453,30 +603,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 /* line 26, ../../src/assets/style/_panels.scss */
 .panels li:nth-child(2n) .panel-content {
-  background-color: #097487;
-  color: #f3f4e4;
+  background-color: rgba(255, 255, 255, 0.21);
+  color: rgb(0, 0, 0);
 }
 /* line 30, ../../src/assets/style/_panels.scss */
 .panels li:nth-child(2n) .panel-content:hover {
-  background-color: #198497 !important;
+  background-color: rgb(255, 255, 255) !important;
   transition-duration: 0.5s;
   transition-timing-function: ease;
 }
 /* line 35, ../../src/assets/style/_panels.scss */
 .panels li:nth-child(2n-1) .panel-content a {
-  color: #5b0400;
+  text-decoration: none;
+  color: #da3610;
 }
 /* line 38, ../../src/assets/style/_panels.scss */
 .panels li:nth-child(2n) .panel-content a {
-  color: #f3f4e4;
+  color: #da3610;
+  text-decoration: none;
 }
 
 /* line 43, ../../src/assets/style/_panels.scss */
 .panel-content {
-  width: 100%;
   height: 8vw;
-  padding: 1vw 0 1vw;
-  font-size: 15px;
+  padding: 1.3vw 0 1.3vw;
+  /*font-size: 15px;*/
+  margin-left: 1.3vw;
+  margin-right: 1.3vw;
+  overflow: hidden;
+  position: relative;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   /* line 43, ../../src/assets/style/_panels.scss */
@@ -490,7 +645,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 /* line 57, ../../src/assets/style/_panels.scss */
 .panel-content .qrcode {
-  margin: 0 0 0 2vw;
+  margin: 0 0 0 1.3vw;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   /* line 57, ../../src/assets/style/_panels.scss */
@@ -512,7 +667,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 /* line 75, ../../src/assets/style/_panels.scss */
 .panel-content .meta {
-  width: 76vw;
+  width: 72vw;
   height: 5vw;
   margin: 0 0 0 1vw;
 }
@@ -525,8 +680,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 /* line 85, ../../src/assets/style/_panels.scss */
 .panel-content .meta h2 {
-  font-size: 55px;
-  font-size: 2vw;
+
+  font-size: 1.9vw;
   line-height: 2.4vw;
   white-space: nowrap;
   word-break: break-all;
@@ -535,19 +690,43 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-text-overflow: ellipsis;
   -moz-text-overflow: ellipsis;
   -o-text-overflow: ellipsis;
+  font-family: "Lucida Grande","Lucida Sans Unicode";
 }
+
+.panel-content .meta h2:hover{text-decoration:underline;}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   /* line 85, ../../src/assets/style/_panels.scss */
-  .panel-content .meta h2 {
-    font-size: 4rem;
-    line-height: 5rem;
+
+}
+
+@media only screen and (max-device-width: 568px){
+.panel-content .meta h2 {
+   /*  font-size: 4rem; */
+  /*   line-height: 5rem; */
+  font-size: 1.9vw;
+  line-height: 20vw;
+  width:60vw;
+
+  }
+
+}
+
+
+@media screen and (max-width: 320px){
+.panel-content .meta h2 {
+   font-size: 1.9vw;
+  line-height: 2.4vw;
+
+
   }
 }
+
 /* line 104, ../../src/assets/style/_panels.scss */
 .panel-content .memo {
   width: 76vw;
   height: 3vw;
-  margin: 0 0 0 1vw;
+  margin: -0.3vw 0 0 1vw;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   /* line 104, ../../src/assets/style/_panels.scss */
@@ -561,6 +740,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 76vw;
   height: 3vw;
   overflow: hidden;
+  font-family: "Lucida Grande","Lucida Sans Unicode",sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 1vw;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   /* line 114, ../../src/assets/style/_panels.scss */
@@ -591,8 +773,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 /* line 143, ../../src/assets/style/_panels.scss */
 .panel-content .buttons {
-  width: 12vw;
-  margin: 0 1vw 0 0;
+  width: 13vw;
+  font-family: 'NovecentowideUltraLightBold';
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   /* line 143, ../../src/assets/style/_panels.scss */
@@ -604,11 +786,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 /* line 153, ../../src/assets/style/_panels.scss */
 .panel-content .buttons .zoom-btn {
-  opacity: 0;
-  padding: 0.2vw 0.3vw;
-  margin-right: 0.5vw;
+  padding: 0.3vw 0.5vw;
+  margin-right: 0;
   font-size: 1.5vw;
   line-height: 1.5vw;
+  cursor: pointer;
+  font-family: 'NovecentowideUltraLightBold';
+  position: absolute;
+  right: 8vw;
+  padding-top: 0.5vw;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   /* line 153, ../../src/assets/style/_panels.scss */
@@ -618,20 +804,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 /* line 165, ../../src/assets/style/_panels.scss */
 .panel-content .buttons .clear-btn {
-  opacity: 0;
-  padding: 0.2vw;
+  padding: 0.3vw 0.5vw;
   font-size: 1.5vw;
   line-height: 1.5vw;
+  cursor: pointer;
+  font-family: 'NovecentowideUltraLightBold';
+  position: absolute;
+  right: 1vw;
+  padding-top: 0.5vw;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
-  /* line 165, ../../src/assets/style/_panels.scss */
-  .panel-content .buttons .clear-btn {
-    opacity: 1;
-    margin: 0;
-    font-size: 8rem;
-    line-height: 9rem;
-  }
-}
+
+
+
 
 /* line 3, ../../src/assets/style/_overlay.scss */
 .overlay {
@@ -639,7 +823,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #f3f4e4;
+  background-color: rgb(243, 244, 228);
   z-index: 9999;
 }
 /* line 11, ../../src/assets/style/_overlay.scss */
@@ -650,6 +834,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   top: 3vw;
   right: 3vw;
   margin: -1.5vw;
+  font-family: NovecentowideUltraLightBold;
+  padding-top: 0.3vw;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   /* line 11, ../../src/assets/style/_overlay.scss */
@@ -694,6 +880,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 11, ../../src/assets/style/main.scss */
 html {
   font-size: 1vw;
+
+
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
   /* line 11, ../../src/assets/style/main.scss */
@@ -704,16 +892,22 @@ html {
 
 /* line 18, ../../src/assets/style/main.scss */
 body {
+
   margin-top: 5vw;
-  font-family: 'Sintony', sans-serif;
-  background-color: #f3f4e4;
+
+
+  font-family: 'NovecentowideBookRegular', sans-serif;
+  /*background-color: #f3f4e4;*/
+  /*OJset*/
+   background:url("../img/bg.jpg") no-repeat center;
+  background-size:cover;
+  background-attachment: fixed;
+
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
-  /* line 18, ../../src/assets/style/main.scss */
-  body {
-    margin: 14rem 0 12rem;
-  }
-}
+
+
+
+
 
 /* line 27, ../../src/assets/style/main.scss */
 button {
@@ -749,10 +943,80 @@ button {
 
 /* line 51, ../../src/assets/style/main.scss */
 .footer {
-  font-size: 1vw;
+  font-size: 0.8vw;
   line-height: 1vw;
-  color: #2b2129;
-  opacity: 0.4;
+  color: rgb(255, 255, 255);
   text-align: right;
-  margin: 1vw 1vw 0 0;
+  margin: 1.3vw 1.3vw 0 0;
+  font-family: NovecentowideNormalRegular;
+}
+
+
+/*OJSET*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  /* line 18, ../../src/assets/style/main.scss */
+  body {
+    margin: 14rem 0 12rem;
+    background:url("../img/bgipn5.jpg") no-repeat center;
+
+  }
+
+  #panels{ margin-top:18vw;}
+
+  .small {font-size: 3vw;padding: 0.66vw 0 0 0;}
+  .panels li {margin-bottom: 3.1vw;}
+  .panel-content {height: 22vw;padding: 1vw;/*font-size: 15px;*/margin-left: 1.3vw;margin-right: 1.3vw;overflow: hidden;position: relative;}
+
+  .panel-content .buttons .clear-btn {padding: 0.3vw 0.5vw;font-size: 4vw;line-height: 4vw;cursor: pointer;font-family: 'NovecentowideUltraLightBold';position: absolute;right: 1vw;padding-top: 0.5vw;}
+
+    .panel-content .meta {width: 76vw;height: 5vw;margin: 0 0 0 1vw;left: 240px;top:20px;}
+
+ #panels .clear-btn{font-size: 3vw;padding: 2vw;}.pull-left {position: absolute;float:none;}
+    .panel-content .memo {
+      width: 70vw;
+      height: 10vw;
+      margin: -0.3vw 0 0 1vw;
+      top: 12vw;
+      left: 24vw;
+     /* background: red;*/
+      position: absolute;
+      overflow: hidden;
+  }
+
+
+  .panel-content .memo textarea {width: 70vw;height: 10vw;margin: 0;padding: 0.25vw 0.5vw;overflow: hidden;}
+  .panel-content .meta h2{font-size:4vw;line-height: 4vw;  width: 50vw;}
+  .qrcode{position:absolute; left:15px; top:15px;}
+  .small{ margin-bottom:0.5vw;}
+  #convert{font-size: 8vw;}
+
+   .hero {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+    background: white;
+    transition: none;
+    -webkit-transition: none;
+    z-index:9999 !important;
+    background: rgb(217,203,181); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(217,203,181,1) 0%, rgba(227,219,194,1) 50%, rgba(216,214,189,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(217,203,181,1)), color-stop(50%,rgba(227,219,194,1)), color-stop(100%,rgba(216,214,189,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(217,203,181,1) 0%,rgba(227,219,194,1) 50%,rgba(216,214,189,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(217,203,181,1) 0%,rgba(227,219,194,1) 50%,rgba(216,214,189,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(217,203,181,1) 0%,rgba(227,219,194,1) 50%,rgba(216,214,189,1) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(217,203,181,1) 0%,rgba(227,219,194,1) 50%,rgba(216,214,189,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9cbb5', endColorstr='#d8d6bd',GradientType=1 ); /* IE6-9 */
+
+      }
+
+    /*.hero h1 {
+    font-size: 6vw;
+    margin-top: 2.1vw;
+    margin-bottom: 2vw;
+    font-family: NovecentowideNormalRegular;
+    }
+
+      .footer p{position: fixed; right: 0; bottom: 0; z-index: 9999 !important; color: black; font-size: 3vw; }
+*/
 }

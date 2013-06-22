@@ -36,14 +36,6 @@ module.exports = function(grunt) {
                 }]
             }
         },
-        compass: {
-            dev: {
-                options: {
-                    sassDir: 'src/assets/style/',
-                    cssDir: 'public/css/'
-                }
-            }
-        },
         watch: {
             requirejs: {
                 files: ['src/js/**/*.js'],
@@ -55,13 +47,6 @@ module.exports = function(grunt) {
             jade: {
                 files: ['src/template/**/*.jade'],
                 tasks: ['jade'],
-                options: {
-                    livereload: true
-                }
-            },
-            stylus: {
-                files: ['src/assets/style/**/*.scss'],
-                tasks: ['compass'],
                 options: {
                     livereload: true
                 }
