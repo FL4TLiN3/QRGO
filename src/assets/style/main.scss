@@ -1,6 +1,7 @@
 @import 'compass/reset';
 @import 'global';
 @import 'common';
+@import 'font';
 @import 'navbar';
 @import 'hero';
 @import 'panels';
@@ -10,6 +11,7 @@
 
 html {
     font-size: 1vw;
+    line-height: 1;
 
     @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
         font-size: 62.5%;
@@ -17,17 +19,20 @@ html {
 }
 body {
     margin-top: 5vw;
-    font-family: 'Sintony', sans-serif;
-    background-color: $white;
+    font-family: 'NovecentowideBookRegular', sans-serif;
+    background: url("../img/bg.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
 
-    @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
         margin: 14rem 0 12rem;
+        background:url("../img/bgipn5.jpg") no-repeat center;
     }
 }
 button {
     font-family: 'Sintony', sans-serif;
-    background: $orange;
-    color: $white;
+    background: #dc3f1c;
+    color: #f3f4e4;
     border: none;
     border-radius: 0;
     transition: opacity 0.5s ease, background-color 0.35s ease;
@@ -49,12 +54,12 @@ button {
     padding: 0;
 }
 .footer {
-    font-size: 1vw;
+    font-size: 0.8vw;
     line-height: 1vw;
-    color: $black;
-    opacity: 0.4;
+    color: rgb(255, 255, 255);
     text-align: right;
-    margin: 1vw 1vw 0 0;
+    margin: 1.3vw 1.3vw 0 0;
+    font-family: NovecentowideNormalRegular;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) { }

@@ -1,3 +1,4 @@
+@import 'compass';
 @import 'global';
 
 .navbar {
@@ -5,12 +6,18 @@
     width: 100%;
     top: 0;
     margin: 0;
-    background-color: $indigo;
+    z-index: 9999 !important;
 
     .navbar-inner {
-        background: $indigo;
         border: none;
         padding: 1vw 0 1vw 1vw;
+        @include background-image(linear-gradient(left,
+            rgba(226, 173, 118, 1),
+            rgba(225, 174, 120, 1) 25%,
+            rgba(213, 211, 188, 0.45) 50%,
+            rgba(206, 214, 191, 0.25) 55%,
+            rgba(208, 215, 197, 0.25)
+        ));
 
         @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
             padding: 0;
@@ -33,17 +40,14 @@
             }
 
             .brand {
-                margin: 0 1.5vw 0 1vw;
+                margin: 0.4vw 1.5vw 0 1vw;
                 font-size: 2.5vw;
                 text-decoration: none;
-                color: $white;
+                color: #f3f4e4;
 
                 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
                     display:none
                 }
-            }
-            .brand:first-letter {
-                font-size: 3vw;
             }
             .brand:hover {
                 color: #f9f9f9;
@@ -75,9 +79,11 @@
             }
 
             .convert-btn {
-                padding: 0.1vw 0.5vw;
+                padding: 0.22vw 0.8vw;
                 margin: 0.3vw 0 0 0;
                 font-size: 1.8vw;
+                font-family: 'NovecentowideUltraLightBold';
+                text-align: center;
 
                 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
                     margin: 0;
@@ -104,6 +110,21 @@
             li {
                 display: inline;
                 margin: 0 1vw;
+            }
+            #githubLink {
+                text-indent: -9999px;
+                display: block;
+                width: 5vw;
+                height: 5vw;
+                background: url("../img/icon_git.png")no-repeat 0 0;
+                position: absolute;
+                top: 1vw;
+                right: 0vw;
+                background-size: 3.5vw;
+                -webkit-transition: all 0.2s ease;
+            }
+            #githubLink:hover {
+                opacity:0.5;
             }
         }
     }

@@ -2,10 +2,13 @@
 
 .hero {
     width: 100%;
-    background: $paleblue;
     overflow: hidden;
     transition: all 0.35s ease;
     -webkit-transition: all 0.35s ease;
+
+    a, a:hover, a:visited, a:active {
+        color: rgba(255, 255, 255, 0.87);
+    }
 
     @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
         position: fixed;
@@ -18,30 +21,27 @@
     }
 
     h1, p {
-        color: $black;
+        color: rgba(255, 255, 255, 0.87);
         text-align: center;
+        letter-spacing: 0.1em;
         @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
             color: $white;
         }
     }
     h1 {
-        font-size: 7vw;
-        margin-top: 0.8vw;
+        font-size: 6vw;
+        margin-top: 2.1vw;
+        font-family: NovecentowideNormalRegular;
         @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
             font-size: 10rem;
             margin-top: 2rem;
         }
     }
-    h1:first-letter {
-        font-size: 8vw;
-
-        @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-            font-size: 11rem;
-        }
-    }
     p {
-        font-size: 0.8vw;
+        font-size: 1.2vw;
         margin-top: 0.3vw;
+        font-family: NovecentowideNormalRegular;
+        letter-spacing: 0.2em;
 
         @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
             display: none;
@@ -65,6 +65,7 @@
 
 .hero-collapse {
     text-align: center;
+    margin-bottom: 2vw;
 
     @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
         display: none;
@@ -78,10 +79,9 @@
     }
 }
 .hero-collapse-open {
-    background: $paleblue;
+    margin-bottom: 2vw;
 }
 .hero-collapse-close {
-    background: $paleblue;
 }
 
 .icon-down,

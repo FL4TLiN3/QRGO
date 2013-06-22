@@ -5,17 +5,18 @@
     width: 100%;
     top: 0;
     left: 0;
-    background-color: $white;
+    background-color: rgb(243, 244, 228);
     z-index: 9999;
 
     .close-btn {
-        $size: 3vw;
-        font-size: $size;
-        line-height: $size;
+        font-size: 3vw;
+        line-height: 3vw;
         position: absolute;
-        top: $size;
-        right: $size;
-        margin: -$size/2;
+        top: 3vw;
+        right: 3vw;
+        margin: -1.5vw;
+        font-family: NovecentowideUltraLightBold;
+        padding-top: 0.3vw;
 
         @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
             font-size: 8rem;

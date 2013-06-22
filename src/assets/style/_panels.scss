@@ -2,7 +2,8 @@
 
 .panels {
     li {
-        height: 10vw;
+        margin-bottom: 1px;
+        height: 10.6vw;
 
         @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
             height: 20.5rem;
@@ -15,36 +16,40 @@
         transition-timing-function: ease;
     }
     li:nth-child(2n-1) .panel-content {
-        background-color: $white;
-        color: $brown;
+        background-color: rgba(255, 255, 255, 0.37);
+        color: rgb(184, 141, 141);
     }
     li:nth-child(2n-1) .panel-content:hover {
-        background-color: $white-hl !important;
+        background-color: #fffff4 !important;
         transition-duration: 0.5s;
         transition-timing-function: ease;
     }
     li:nth-child(2n) .panel-content{
-        background-color: $aqua;
-        color: $white;
+        background-color: rgba(255, 255, 255, 0.21);
+        color: rgb(0, 0, 0);
     }
     li:nth-child(2n) .panel-content:hover {
-        background-color: $aqua-hl !important;
+        background-color: rgb(255, 255, 255) !important;
         transition-duration: 0.5s;
         transition-timing-function: ease;
     }
     li:nth-child(2n-1) .panel-content a {
-        color: $brown;
+        text-decoration: none;
+        color: #da3610;
     }
     li:nth-child(2n) .panel-content a {
-        color: $white;
+        color: #da3610;
+        text-decoration: none;
     }
 }
 
 .panel-content {
-    width: 100%;
     height: 8vw;
-    padding: 1vw 0 1vw;
-    font-size: 15px;
+    padding: 1.3vw 0 1.3vw;
+    margin-left: 1.3vw;
+    margin-right: 1.3vw;
+    overflow: hidden;
+    position: relative;
 
     @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
         margin: 0;
@@ -55,25 +60,25 @@
     }
 
     .qrcode {
-        margin: 0 0 0 2vw;
+        margin: 0 0 0 1.3vw;
 
         @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
             margin: 0;
         }
 
         img, canvas {
-            $qrSize: 8vw;
-            width: $qrSize; height: $qrSize;
+            width: 8vw;
+            height: 8vw;
 
             @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-                $qrSize: 20rem;
-                width: $qrSize; height: $qrSize;
+                width: 20rem;
+                height: 20rem;
             }
         }
     }
 
     .meta {
-        width: 76vw;
+        width: 72vw;
         height: 5vw;
         margin: 0 0 0 1vw;
 
@@ -83,8 +88,7 @@
         }
 
         h2 {
-            font-size: 55px;
-            font-size: 2vw;
+            font-size: 1.9vw;
             line-height: 2.4vw;
             white-space: nowrap;
             word-break: break-all;
@@ -93,18 +97,27 @@
             -webkit-text-overflow: ellipsis;
             -moz-text-overflow: ellipsis;
             -o-text-overflow: ellipsis;
+            font-family: "Lucida Grande","Lucida Sans Unicode";
 
-            @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-                font-size: 4rem;
-                line-height: 5rem;
+            @media only screen and (max-device-width: 568px) {
+                font-size: 1.9vw;
+                line-height: 2.0vw;
+                width:60vw;
             }
+            @media only screen and (max-device-width: 320px) {
+                font-size: 1.9vw;
+                line-height: 2.4vw;
+            }
+        }
+        h2:hover {
+            text-decoration: underline;
         }
     }
 
     .memo {
         width: 76vw;
         height: 3vw;
-        margin: 0 0 0 1vw;
+        margin: -0.3vw 0 0 1vw;
 
         @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
             width: 75rem;
@@ -115,22 +128,26 @@
             width: 76vw;
             height: 3vw;
             overflow: hidden;
+            font-family: "Lucida Grande","Lucida Sans Unicode",sans-serif;
+            color: rgb(0, 0, 0);
+            font-size: 1vw;
 
             @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-                width: 75rem;
-                height: 10rem;
-                font-size: 3rem;
-                line-height: 3rem;
+                width: 76vw;
+                height: 3vw;
+                overflow: hidden;
+                font-family: "Lucida Grande","Lucida Sans Unicode",sans-serif;
+                color: rgb(0, 0, 0);
+                font-size: 1vw;
             }
         }
         textarea {
-            $size: 1vw;
             width: 74vw;
             height: 2.5vw;
             margin: 0;
             padding: 0.25vw 0.5vw;
-            font-size: $size;
-            line-height: $size;
+            font-size: 1vw;
+            line-height: 1vw;
 
             @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
                 width: 75rem;
@@ -141,8 +158,8 @@
         }
     }
     .buttons {
-        width: 12vw;
-        margin: 0 1vw 0 0;
+        width: 13vw;
+        font-family: 'NovecentowideUltraLightBold';
 
         @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
             margin: 0;
@@ -151,23 +168,29 @@
         }
 
         .zoom-btn {
-            $size: 1.5vw;
-            opacity: 0;
-            padding: 0.2vw 0.3vw;
-            margin-right: 0.5vw;
-            font-size: $size;
-            line-height: $size;
+            padding: 0.3vw 0.5vw;
+            margin-right: 0;
+            font-size: 1.5vw;
+            line-height: 1.5vw;
+            cursor: pointer;
+            font-family: 'NovecentowideUltraLightBold';
+            position: absolute;
+            right: 8vw;
+            padding-top: 0.5vw;
 
             @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
                 display: none;
             }
         }
         .clear-btn {
-            $size: 1.5vw;
-            opacity: 0;
-            padding: 0.2vw;
-            font-size: $size;
-            line-height: $size;
+            padding: 0.3vw 0.5vw;
+            font-size: 1.5vw;
+            line-height: 1.5vw;
+            cursor: pointer;
+            font-family: 'NovecentowideUltraLightBold';
+            position: absolute;
+            right: 1vw;
+            padding-top: 0.5vw;
 
             @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
                 opacity: 1;
