@@ -15,9 +15,15 @@
         width: 100%;
         bottom: 0;
         margin: 0;
-        background: $indigo;
+        background: white;
         transition: none;
         -webkit-transition: none;
+        z-index:9999 !important;
+        @include background-image(linear-gradient(left,
+            rgba(217,203,181,1),
+            rgba(227,219,194,1) 50%,
+            rgba(216,214,189,1)
+        ));
     }
 
     h1, p {

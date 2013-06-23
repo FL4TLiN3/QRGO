@@ -21,6 +21,11 @@
     color: rgb(0, 0, 0);
     font-size: 0.9vw;
     margin-bottom: 0.1vw;
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+        font-size: 3vw;
+        padding: 0.66vw 0 0 0;
+    }
 }
 
 .fadein {

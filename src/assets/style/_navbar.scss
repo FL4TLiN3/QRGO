@@ -59,22 +59,20 @@
                 border: none;
                 border-radius: 0;
                 font-size: 1.0vw;
-                background-color: $white;
+                background-color: rgba(255, 255, 255, 0.81);
 
                 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
                     margin: 0;
                     padding: 4rem 2.5%;
                     width: 75%;
-                    background-color: $indigo;
                     font-size: 5rem;
                     line-height: 5rem;
                     float: left;
-                    color: $white;
-                }
-            }
-            @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-                #url::-webkit-input-placeholder {
-                    color: $paleblue;
+                    color: black;
+
+                    #url::-webkit-input-placeholder {
+                        color: $paleblue;
+                    }
                 }
             }
 
@@ -89,7 +87,7 @@
                     margin: 0;
                     padding: 1rem 0 1rem;
                     width: 20%;
-                    font-size: 12rem;
+                    font-size: 8vw;
                     line-height: 12rem;
                     float: left;
                 }

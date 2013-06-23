@@ -96,8 +96,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-size: 0.9vw;
   margin-bottom: 0.1vw;
 }
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+  /* line 16, /Users/lambda/workspace/QRGO/src/assets/style/_common.scss */
+  .small {
+    font-size: 3vw;
+    padding: 0.66vw 0 0 0;
+  }
+}
 
-/* line 26, /Users/lambda/workspace/QRGO/src/assets/style/_common.scss */
+/* line 31, /Users/lambda/workspace/QRGO/src/assets/style/_common.scss */
 .fadein {
   animation: fadein 0.5s ease;
   -webkit-animation: fadein 0.5s ease;
@@ -106,54 +113,54 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @keyframes fadein {
-  /* line 33, /Users/lambda/workspace/QRGO/src/assets/style/_common.scss */
+  /* line 38, /Users/lambda/workspace/QRGO/src/assets/style/_common.scss */
   from {
     opacity: 0;
   }
 
-  /* line 33, /Users/lambda/workspace/QRGO/src/assets/style/_common.scss */
+  /* line 38, /Users/lambda/workspace/QRGO/src/assets/style/_common.scss */
   to {
     opacity: 1;
   }
 }
 
 @-webkit-keyframes fadein {
-  /* line 34, /Users/lambda/workspace/QRGO/src/assets/style/_common.scss */
+  /* line 39, /Users/lambda/workspace/QRGO/src/assets/style/_common.scss */
   from {
     opacity: 0;
   }
 
-  /* line 34, /Users/lambda/workspace/QRGO/src/assets/style/_common.scss */
+  /* line 39, /Users/lambda/workspace/QRGO/src/assets/style/_common.scss */
   to {
     opacity: 1;
   }
 }
 
 @-moz-keyframes fadein {
-  /* line 35, /Users/lambda/workspace/QRGO/src/assets/style/_common.scss */
+  /* line 40, /Users/lambda/workspace/QRGO/src/assets/style/_common.scss */
   from {
     opacity: 0;
   }
 
-  /* line 35, /Users/lambda/workspace/QRGO/src/assets/style/_common.scss */
+  /* line 40, /Users/lambda/workspace/QRGO/src/assets/style/_common.scss */
   to {
     opacity: 1;
   }
 }
 
 @-o-keyframes fadein {
-  /* line 36, /Users/lambda/workspace/QRGO/src/assets/style/_common.scss */
+  /* line 41, /Users/lambda/workspace/QRGO/src/assets/style/_common.scss */
   from {
     opacity: 0;
   }
 
-  /* line 36, /Users/lambda/workspace/QRGO/src/assets/style/_common.scss */
+  /* line 41, /Users/lambda/workspace/QRGO/src/assets/style/_common.scss */
   to {
     opacity: 1;
   }
 }
 
-/* line 38, /Users/lambda/workspace/QRGO/src/assets/style/_common.scss */
+/* line 43, /Users/lambda/workspace/QRGO/src/assets/style/_common.scss */
 .collapseOut {
   height: 0 !important;
   opacity: 0;
@@ -280,7 +287,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border: none;
   border-radius: 0;
   font-size: 1.0vw;
-  background-color: #f3f4e4;
+  background-color: rgba(255, 255, 255, 0.81);
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
   /* line 55, /Users/lambda/workspace/QRGO/src/assets/style/_navbar.scss */
@@ -288,20 +295,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin: 0;
     padding: 4rem 2.5%;
     width: 75%;
-    background-color: #00515c;
     font-size: 5rem;
     line-height: 5rem;
     float: left;
-    color: #f3f4e4;
+    color: black;
   }
-}
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-  /* line 76, /Users/lambda/workspace/QRGO/src/assets/style/_navbar.scss */
-  .navbar .navbar-inner .navbar-form #url::-webkit-input-placeholder {
+  /* line 73, /Users/lambda/workspace/QRGO/src/assets/style/_navbar.scss */
+  .navbar .navbar-inner .navbar-form #url #url::-webkit-input-placeholder {
     color: #acbcbd;
   }
 }
-/* line 81, /Users/lambda/workspace/QRGO/src/assets/style/_navbar.scss */
+/* line 79, /Users/lambda/workspace/QRGO/src/assets/style/_navbar.scss */
 .navbar .navbar-inner .navbar-form .convert-btn {
   padding: 0.22vw 0.8vw;
   margin: 0.3vw 0 0 0;
@@ -310,38 +314,38 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-align: center;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-  /* line 81, /Users/lambda/workspace/QRGO/src/assets/style/_navbar.scss */
+  /* line 79, /Users/lambda/workspace/QRGO/src/assets/style/_navbar.scss */
   .navbar .navbar-inner .navbar-form .convert-btn {
     margin: 0;
     padding: 1rem 0 1rem;
     width: 20%;
-    font-size: 12rem;
+    font-size: 8vw;
     line-height: 12rem;
     float: left;
   }
 }
-/* line 98, /Users/lambda/workspace/QRGO/src/assets/style/_navbar.scss */
+/* line 96, /Users/lambda/workspace/QRGO/src/assets/style/_navbar.scss */
 .navbar .navbar-inner .links {
   float: right;
   margin: 1vw 0 0 0;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-  /* line 98, /Users/lambda/workspace/QRGO/src/assets/style/_navbar.scss */
+  /* line 96, /Users/lambda/workspace/QRGO/src/assets/style/_navbar.scss */
   .navbar .navbar-inner .links {
     display: none;
   }
 }
-/* line 106, /Users/lambda/workspace/QRGO/src/assets/style/_navbar.scss */
+/* line 104, /Users/lambda/workspace/QRGO/src/assets/style/_navbar.scss */
 .navbar .navbar-inner .links a, .navbar .navbar-inner .links a:hover, .navbar .navbar-inner .links a:active, .navbar .navbar-inner .links a:visited {
   color: #f3f4e4;
   font-size: 1vw;
 }
-/* line 110, /Users/lambda/workspace/QRGO/src/assets/style/_navbar.scss */
+/* line 108, /Users/lambda/workspace/QRGO/src/assets/style/_navbar.scss */
 .navbar .navbar-inner .links li {
   display: inline;
   margin: 0 1vw;
 }
-/* line 114, /Users/lambda/workspace/QRGO/src/assets/style/_navbar.scss */
+/* line 112, /Users/lambda/workspace/QRGO/src/assets/style/_navbar.scss */
 .navbar .navbar-inner .links #githubLink {
   text-indent: -9999px;
   display: block;
@@ -354,7 +358,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-size: 3.5vw;
   -webkit-transition: all 0.2s ease;
 }
-/* line 126, /Users/lambda/workspace/QRGO/src/assets/style/_navbar.scss */
+/* line 124, /Users/lambda/workspace/QRGO/src/assets/style/_navbar.scss */
 .navbar .navbar-inner .links #githubLink:hover {
   opacity: 0.5;
 }
@@ -377,37 +381,43 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     width: 100%;
     bottom: 0;
     margin: 0;
-    background: #00515c;
+    background: white;
     transition: none;
     -webkit-transition: none;
+    z-index: 9999 !important;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #d9cbb5), color-stop(50%, #e3dbc2), color-stop(100%, #d8d6bd));
+    background-image: -webkit-linear-gradient(left, #d9cbb5, #e3dbc2 50%, #d8d6bd);
+    background-image: -moz-linear-gradient(left, #d9cbb5, #e3dbc2 50%, #d8d6bd);
+    background-image: -o-linear-gradient(left, #d9cbb5, #e3dbc2 50%, #d8d6bd);
+    background-image: linear-gradient(left, #d9cbb5, #e3dbc2 50%, #d8d6bd);
   }
 }
-/* line 23, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
+/* line 29, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
 .hero h1, .hero p {
   color: rgba(255, 255, 255, 0.87);
   text-align: center;
   letter-spacing: 0.1em;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-  /* line 23, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
+  /* line 29, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
   .hero h1, .hero p {
     color: #f3f4e4;
   }
 }
-/* line 31, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
+/* line 37, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
 .hero h1 {
   font-size: 6vw;
   margin-top: 2.1vw;
   font-family: NovecentowideNormalRegular;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-  /* line 31, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
+  /* line 37, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
   .hero h1 {
     font-size: 10rem;
     margin-top: 2rem;
   }
 }
-/* line 40, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
+/* line 46, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
 .hero p {
   font-size: 1.2vw;
   margin-top: 0.3vw;
@@ -415,46 +425,46 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   letter-spacing: 0.2em;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-  /* line 40, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
+  /* line 46, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
   .hero p {
     display: none;
   }
 }
 
-/* line 51, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
+/* line 57, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
 .hero-close {
   height: 0;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-  /* line 51, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
+  /* line 57, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
   .hero-close {
     height: 15rem;
   }
 }
 
-/* line 58, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
+/* line 64, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
 .hero-open {
   height: 12vw;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-  /* line 58, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
+  /* line 64, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
   .hero-open {
     height: 15rem;
   }
 }
 
-/* line 66, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
+/* line 72, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
 .hero-collapse {
   text-align: center;
   margin-bottom: 2vw;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-  /* line 66, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
+  /* line 72, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
   .hero-collapse {
     display: none;
   }
 }
-/* line 74, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
+/* line 80, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
 .hero-collapse .hero-collapse-btn {
   width: 100%;
   background: transparent;
@@ -462,12 +472,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 0;
 }
 
-/* line 81, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
+/* line 87, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
 .hero-collapse-open {
   margin-bottom: 2vw;
 }
 
-/* line 88, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
+/* line 94, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
 .icon-down,
 .icon-up {
   display: block;
@@ -477,68 +487,75 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-repeat: no-repeat;
 }
 
-/* line 95, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
+/* line 101, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
 .icon-down {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb3Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2MDYzMDRGOUJFMUMxMUUyODdDRkEwOUE5NjM0MEQ0NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2MDYzMDRGQUJFMUMxMUUyODdDRkEwOUE5NjM0MEQ0NyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjYwNjMwNEY3QkUxQzExRTI4N0NGQTA5QTk2MzQwRDQ3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjYwNjMwNEY4QkUxQzExRTI4N0NGQTA5QTk2MzQwRDQ3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+cDVzcwAAAMFJREFUeNpi/P//PwMtAeOoBaMWUA5AFqDhyUD8HYjPA7EMFnl0zAfEC4F4NxBbostj0wAyHAYuATE/AcOPIKl/TIwFF/+jgsNAzEWE4SBwmxgLdID4FZrGjUDMTMDwr0BsR4wFIGwO1YAM5gIxKFHwEms4PgtA2AeIf6IZ1EeK4YQsAOFoIP73HzcAGW6PzwwGIpJhGbmGE2sBCPdjMdyBGL3EWgCK3CWkGk6KBSDMBsQrSTEchEdL01ELKAcAAQYAMk+F7NVKSrsAAAAASUVORK5CYII=);
 }
 
-/* line 98, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
+/* line 104, /Users/lambda/workspace/QRGO/src/assets/style/_hero.scss */
 .icon-up {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb3Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2MDYzMDRGREJFMUMxMUUyODdDRkEwOUE5NjM0MEQ0NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2MDYzMDRGRUJFMUMxMUUyODdDRkEwOUE5NjM0MEQ0NyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjYwNjMwNEZCQkUxQzExRTI4N0NGQTA5QTk2MzQwRDQ3IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjYwNjMwNEZDQkUxQzExRTI4N0NGQTA5QTk2MzQwRDQ3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+hLZhSwAAAL9JREFUeNpi/P//PwMtAeOoBaMWUAyYSFTvAMQrgJiNaB0gHxCJHYD4638IWALEjMToI9ZweyTDYaCXWhbYYTEcBkoptQCf4SDwD4ijybUAm+FHgLgfTewnEHuTagHI8C9oBh0FYj5o5M5DkwM5xJxYC2zxGA5TwwzEG9HUvAJibWIsuE3AcBjmgsohg4vEWPAIzXB+PPEEkruEpP47MRZYAvEeIF5EwHAYlgHi80D8A4gno8uPlqajFlAOAAIMACbGPjfP33mbAAAAAElFTkSuQmCC);
 }
 
-/* line 4, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+  /* line 3, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+  .panels {
+    margin-top: 18vw;
+  }
+}
+/* line 8, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
 .panels li {
   margin-bottom: 1px;
   height: 10.6vw;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-  /* line 4, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+  /* line 8, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
   .panels li {
     height: 20.5rem;
+    margin-bottom: 3.1vw;
   }
 }
-/* line 13, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+/* line 18, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
 .panels li:hover .zoom-btn,
 .panels li:hover .clear-btn {
   opacity: 1;
   transition-duration: 0.5s;
   transition-timing-function: ease;
 }
-/* line 18, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+/* line 23, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
 .panels li:nth-child(2n-1) .panel-content {
   background-color: rgba(255, 255, 255, 0.37);
   color: #b88d8d;
 }
-/* line 22, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+/* line 27, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
 .panels li:nth-child(2n-1) .panel-content:hover {
   background-color: #fffff4 !important;
   transition-duration: 0.5s;
   transition-timing-function: ease;
 }
-/* line 27, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+/* line 32, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
 .panels li:nth-child(2n) .panel-content {
   background-color: rgba(255, 255, 255, 0.21);
   color: black;
 }
-/* line 31, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+/* line 36, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
 .panels li:nth-child(2n) .panel-content:hover {
   background-color: white !important;
   transition-duration: 0.5s;
   transition-timing-function: ease;
 }
-/* line 36, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+/* line 41, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
 .panels li:nth-child(2n-1) .panel-content a {
   text-decoration: none;
   color: #da3610;
 }
-/* line 40, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+/* line 45, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
 .panels li:nth-child(2n) .panel-content a {
   color: #da3610;
   text-decoration: none;
 }
 
-/* line 46, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+/* line 51, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
 .panel-content {
   height: 8vw;
   padding: 1.3vw 0 1.3vw;
@@ -548,51 +565,60 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   position: relative;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-  /* line 46, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+  /* line 51, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
   .panel-content {
-    margin: 0;
-    padding: 0 0 0.5rem 0;
     font-size: 2.5rem;
     line-height: 2.5rem;
-    height: 20rem;
+    height: 22vw;
+    padding: 1vw;
+    margin: 0 1.3vw;
+    overflow: hidden;
+    position: relative;
   }
 }
-/* line 62, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+/* line 69, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
 .panel-content .qrcode {
   margin: 0 0 0 1.3vw;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-  /* line 62, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+  /* line 69, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
   .panel-content .qrcode {
+    position: absolute;
+    left: 15px;
+    top: 15px;
     margin: 0;
   }
 }
-/* line 69, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+/* line 79, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
 .panel-content .qrcode img, .panel-content .qrcode canvas {
   width: 8vw;
   height: 8vw;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-  /* line 69, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+  /* line 79, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
   .panel-content .qrcode img, .panel-content .qrcode canvas {
     width: 20rem;
     height: 20rem;
   }
 }
-/* line 80, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+/* line 90, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
 .panel-content .meta {
   width: 72vw;
   height: 5vw;
   margin: 0 0 0 1vw;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-  /* line 80, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+  /* line 90, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
   .panel-content .meta {
-    width: 52rem;
-    height: 10rem;
+    position: absolute;
+    left: 240px;
+    top: 20px;
+    width: 76vw;
+    height: 5vw;
+    margin: 0 0 0 1vw;
   }
 }
-/* line 90, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+/* line 104, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
 .panel-content .meta h2 {
   font-size: 1.9vw;
   line-height: 2.4vw;
@@ -605,39 +631,32 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -o-text-overflow: ellipsis;
   font-family: "Lucida Grande","Lucida Sans Unicode";
 }
-@media only screen and (max-device-width: 568px) {
-  /* line 90, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+  /* line 104, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
   .panel-content .meta h2 {
-    font-size: 1.9vw;
-    line-height: 2.0vw;
-    width: 60vw;
+    font-size: 4vw;
+    line-height: 5vw;
+    width: 50vw;
   }
 }
-@media only screen and (max-device-width: 320px) {
-  /* line 90, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
-  .panel-content .meta h2 {
-    font-size: 1.9vw;
-    line-height: 2.4vw;
-  }
-}
-/* line 112, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+/* line 122, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
 .panel-content .meta h2:hover {
   text-decoration: underline;
 }
-/* line 117, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+/* line 127, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
 .panel-content .memo {
   width: 76vw;
   height: 3vw;
   margin: -0.3vw 0 0 1vw;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-  /* line 117, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+  /* line 127, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
   .panel-content .memo {
     width: 75rem;
     height: 10rem;
   }
 }
-/* line 127, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+/* line 137, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
 .panel-content .memo div {
   width: 76vw;
   height: 3vw;
@@ -647,17 +666,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-size: 1vw;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-  /* line 127, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+  /* line 137, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
   .panel-content .memo div {
-    width: 76vw;
-    height: 3vw;
+    position: absolute;
+    top: 12vw;
+    left: 24vw;
+    width: 70vw;
+    height: 10vw;
+    margin: -0.3vw 0 0 1vw;
     overflow: hidden;
     font-family: "Lucida Grande","Lucida Sans Unicode",sans-serif;
     color: black;
-    font-size: 1vw;
+    font-size: 3rem;
+    line-height: 3rem;
   }
 }
-/* line 144, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+/* line 159, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
 .panel-content .memo textarea {
   width: 74vw;
   height: 2.5vw;
@@ -667,28 +691,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   line-height: 1vw;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-  /* line 144, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+  /* line 159, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
   .panel-content .memo textarea {
-    width: 75rem;
-    height: 9rem;
+    position: absolute;
+    top: 12vw;
+    left: 24vw;
+    width: 70vw;
+    height: 10vw;
+    margin: 0;
+    padding: 0.25vw 0.5vw;
+    overflow: hidden;
     font-size: 3rem;
     line-height: 3rem;
   }
 }
-/* line 160, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+/* line 181, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
 .panel-content .buttons {
   width: 13vw;
   font-family: 'NovecentowideUltraLightBold';
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-  /* line 160, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+  /* line 181, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
   .panel-content .buttons {
     margin: 0;
     width: 24.2rem;
     float: right;
   }
 }
-/* line 170, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+/* line 191, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
 .panel-content .buttons .zoom-btn {
   padding: 0.3vw 0.5vw;
   margin-right: 0;
@@ -701,12 +731,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding-top: 0.5vw;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-  /* line 170, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+  /* line 191, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
   .panel-content .buttons .zoom-btn {
     display: none;
   }
 }
-/* line 185, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+/* line 206, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
 .panel-content .buttons .clear-btn {
   padding: 0.3vw 0.5vw;
   font-size: 1.5vw;
@@ -718,12 +748,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding-top: 0.5vw;
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
-  /* line 185, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
+  /* line 206, /Users/lambda/workspace/QRGO/src/assets/style/_panels.scss */
   .panel-content .buttons .clear-btn {
+    padding: 0.3vw 0.5vw;
+    font-size: 4vw;
+    line-height: 4vw;
+    cursor: pointer;
+    font-family: 'NovecentowideUltraLightBold';
+    position: absolute;
+    right: 1vw;
+    padding-top: 1.5vw;
+    right: -7px;
     opacity: 1;
     margin: 0;
-    font-size: 8rem;
-    line-height: 9rem;
   }
 }
 
